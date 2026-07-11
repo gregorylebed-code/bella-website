@@ -31,7 +31,26 @@ export const photos: { src: string; caption: string }[] = [
 // Put drawing images in: public/drawings/
 // -----------------------------
 export const drawings: { src: string; caption: string }[] = [
-  // { src: "/drawings/castle.jpg", caption: "My castle in the clouds" },
+  { src: "/drawings/bella-drawing-01.png", caption: "Drawing 1" },
+  { src: "/drawings/bella-drawing-02.png", caption: "Drawing 2" },
+  { src: "/drawings/bella-drawing-03.png", caption: "Drawing 3" },
+  { src: "/drawings/bella-drawing-04.png", caption: "Drawing 4" },
+  { src: "/drawings/bella-drawing-05.png", caption: "Drawing 5" },
+  { src: "/drawings/bella-drawing-06.png", caption: "Drawing 6" },
+  { src: "/drawings/bella-drawing-07.png", caption: "Drawing 7" },
+  { src: "/drawings/bella-drawing-08.png", caption: "Drawing 8" },
+  { src: "/drawings/bella-drawing-09.png", caption: "Drawing 9" },
+  { src: "/drawings/bella-drawing-10.png", caption: "Drawing 10" },
+  { src: "/drawings/bella-drawing-11.png", caption: "Drawing 11" },
+  { src: "/drawings/bella-drawing-12.png", caption: "Drawing 12" },
+  { src: "/drawings/bella-drawing-13.png", caption: "Drawing 13" },
+  { src: "/drawings/bella-drawing-14.png", caption: "Drawing 14" },
+  { src: "/drawings/bella-drawing-15.png", caption: "Drawing 15" },
+  { src: "/drawings/bella-drawing-16.png", caption: "Drawing 16" },
+  { src: "/drawings/bella-drawing-17.png", caption: "Drawing 17" },
+  { src: "/drawings/bella-drawing-18.png", caption: "Drawing 18" },
+  { src: "/drawings/bella-drawing-19.png", caption: "Drawing 19" },
+  { src: "/drawings/bella-drawing-20.png", caption: "Drawing 20" },
 ];
 
 // -----------------------------
