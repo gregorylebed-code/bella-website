@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --sky-top: #7ec8f2;
+  --sky-bottom: #cdeeff;
+  --foreground: #2f3a4a;
 }
 
 @theme inline {
-  --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-heading: var(--font-baloo);
+  --font-sans: var(--font-quicksand);
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-quicksand), sans-serif;
+  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 40%, #fdf6e3 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .heading-font {
+  font-family: var(--font-baloo), sans-serif;
+}
+
+/* Floating clouds, purely decorative background layer */
+.cloud {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 999px;
+  opacity: 0.9;
+  filter: drop-shadow(0 6px 10px rgba(120, 150, 180, 0.15));
+  pointer-events: none;
+}
+
+.cloud::before,
+.cloud::after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  border-radius: 999px;
+}
+
+@keyframes drift {
+  from { transform: translateX(-10vw); }
+  to { transform: translateX(110vw); }
+}
+
+.cloud-drift {
+  animation: drift linear infinite;
+}
+
+.rainbow-arc {
+  border-radius: 999px 999px 0 0;
+  border-style: solid;
+  border-bottom: none;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 24px rgba(80, 110, 150, 0.12);
 }

@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bella's Website
 
-## Getting Started
+A fun, clouds-and-rainbows website for Bella to share pictures, drawings, stories, and YouTube videos.
 
-First, run the development server:
+## How to add content
 
-```bash
+Everything Bella wants on the site is edited in one file: `src/app/content.ts`
+
+- **Pictures**: drop image files into `public/photos/`, then add an entry to the `photos` list in `content.ts`.
+- **Drawings**: drop image files into `public/drawings/`, then add an entry to the `drawings` list.
+- **Stories**: just add a title and the story text directly in the `stories` list, no image needed.
+- **Videos**: find the YouTube video ID from the URL (the part after `v=`) and add it to the `videos` list.
+
+After editing, save the file. If running locally you'll see it update immediately. If it's live on Vercel, commit and push to redeploy.
+
+## Run it locally
+
+```
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Push this folder to a GitHub repo and import it into a new Vercel project (no custom domain needed, the free `*.vercel.app` URL is fine).
