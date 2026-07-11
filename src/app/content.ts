@@ -9,6 +9,14 @@ export const siteName = "Bella's World";
 export const tagline = "Welcome to my corner of the internet!";
 
 // -----------------------------
+// YOUTUBE CHANNEL
+// Link to Bella's YouTube channel (shows as a button near the top).
+// Leave as an empty string "" to hide the button.
+// -----------------------------
+export const youtubeChannelUrl = "https://www.youtube.com/@BellasBistro";
+export const youtubeChannelName = "Bella's Bistro";
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"
