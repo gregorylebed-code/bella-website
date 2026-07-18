@@ -22,8 +22,7 @@ export const youtubeChannelName = "Bella's Bistro";
 // Then reference them here as "/photos/filename.jpg"
 // -----------------------------
 export const photos: { src: string; caption: string }[] = [
-  // Example (uncomment and edit once a real photo is added):
-  // { src: "/photos/my-drawing.jpg", caption: "A dragon I drew!" },
+  { src: "/photos/bella-rainbow-shirt.jpg", caption: "Me in my rainbow shirt!" },
 ];
 
 // -----------------------------
