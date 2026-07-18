@@ -64,6 +64,30 @@ export const stories: { title: string; text: string }[] = [
 ];
 
 // -----------------------------
+// BLOG
+// Write about anything: your day, something you're excited about,
+// whatever you want. Newest posts should go at the TOP of the list.
+// Date format: "Month Day, Year" (e.g. "July 18, 2026")
+// -----------------------------
+export const blogPosts: { title: string; date: string; text: string }[] = [
+  {
+    title: "Welcome to Bella's World!",
+    date: "July 18, 2026",
+    text: `Hi, welcome to Bella's world! I'm 16 years of age! It's so nice to meet you all! Thank you for stopping by on my website. This is where I'll showcase my art, recipes, my cooking channel!
+
+A couple fun facts about me: I am on the autism spectrum, I have two dogs and a rabbit. Some ways I describe myself: hard working, empathetic, artsy, funny, always hungry. I love spending time with my family, friends, and pets! In my spare time I cook, play video games, watch YouTube. I also speak German and plan to speak other languages too!
+
+I hope to become a chef or a psychologist one day for kids and adolescents on the autism spectrum. I'm here to spread love and joy with passion and rainbows and kindness.
+
+Just know, please don't ever ask me to decide what to eat, or whatever you can't decide, because spoiler alert: I can never decide, so if I decide for you, it won't be decided lol. But that's the woman in me hahahaha.
+
+Some of my skills include: cooking, writing stories, food blogging, some might call me the dog whisperer. I have a strong sense for details, and a photographic memory. Could I tell you 9x7? I'm afraid not. But I can tell you every Pokemon by silhouettes, therefore I'm a woman with useless info. But aren't we all (no offense).
+
+I also have a massive fun sock collection! So many cool designs, foods, animals. I can do voice impressions of Marge, Stewie, Homer, Stitch. And make useless bird call noises.`,
+  },
+];
+
+// -----------------------------
 // YOUTUBE VIDEOS
 // Paste the video ID from the URL.
 // Example: https://www.youtube.com/watch?v=dQw4w9WgXcQ -> ID is "dQw4w9WgXcQ"
