@@ -56,12 +56,7 @@ export const drawings: { src: string; caption: string }[] = [
 // STORIES
 // Just write the title and the story text right here.
 // -----------------------------
-export const stories: { title: string; text: string }[] = [
-  {
-    title: "The Rainbow Cloud Kingdom",
-    text: "Once upon a time, there was a kingdom in the clouds where every rainbow led to a new adventure. This is just a starter story, replace it with one of your own!",
-  },
-];
+export const stories: { title: string; text: string }[] = [];
 
 // -----------------------------
 // BLOG
