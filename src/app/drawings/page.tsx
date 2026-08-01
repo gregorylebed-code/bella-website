@@ -2,6 +2,7 @@ import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
 import RandomDrawingButton from "./RandomDrawingButton";
+import DrawingsGrid from "./DrawingsGrid";
 import { drawings } from "../content";
 
 export default function DrawingsPage() {
@@ -20,15 +21,8 @@ export default function DrawingsPage() {
           <EmptyState text="No drawings yet, check back soon!" />
         ) : (
           <>
-          <RandomDrawingButton drawings={drawings} />
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            {drawings.map((d) => (
-              <figure key={d.src} className="card overflow-hidden">
-                <img src={d.src} alt={d.caption} className="w-full aspect-square object-cover" />
-                <figcaption className="p-2 text-sm text-center font-medium">{d.caption}</figcaption>
-              </figure>
-            ))}
-          </div>
+            <RandomDrawingButton drawings={drawings} />
+            <DrawingsGrid drawings={drawings} />
           </>
         )}
       </section>
