@@ -3,7 +3,6 @@ const links: [string, string][] = [
   ["About", "/about"],
   ["Pictures", "/pictures"],
   ["Drawings", "/drawings"],
-  ["Stories", "/stories"],
   ["Blog", "/blog"],
   ["Tidbits: Autism and More", "/tidbits"],
   ["Videos", "/videos"],

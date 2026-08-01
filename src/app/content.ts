@@ -78,12 +78,6 @@ export const drawings: { src: string; caption: string }[] = [
 ];
 
 // -----------------------------
-// STORIES
-// Just write the title and the story text right here.
-// -----------------------------
-export const stories: { title: string; text: string }[] = [];
-
-// -----------------------------
 // BLOG
 // Write about anything: your day, something you're excited about,
 // whatever you want. Newest posts should go at the TOP of the list.
