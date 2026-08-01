@@ -17,6 +17,23 @@ export const youtubeChannelUrl = "https://www.youtube.com/@BellasBistro";
 export const youtubeChannelName = "Bella's Bistro";
 
 // -----------------------------
+// ABOUT ME
+// A quick intro for new visitors, plus a photo and quick facts.
+// -----------------------------
+export const aboutPhoto = "/photos/bella-rainbow-shirt.jpg";
+export const aboutIntro = `Hi, I'm Bella! I'm 16 years old, I'm on the autism spectrum, and this is my corner of the internet. I love cooking, drawing, writing, and spending time with my family, friends, and pets. I hope to become a chef or a psychologist one day for kids and adolescents on the autism spectrum. I'm here to spread love and joy with passion, rainbows, and kindness.`;
+export const quickFacts: string[] = [
+  "16 years old",
+  "On the autism spectrum",
+  "Have two dogs and a rabbit",
+  "Speak German, learning more languages",
+  "Massive sock collection",
+  "Photographic memory for random facts",
+  "Can do voice impressions of Marge, Stewie, Homer, and Stitch",
+  "Future goal: chef or psychologist for kids on the spectrum",
+];
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"

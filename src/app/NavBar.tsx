@@ -1,5 +1,6 @@
 const links: [string, string][] = [
   ["Home", "/"],
+  ["About", "/about"],
   ["Pictures", "/pictures"],
   ["Drawings", "/drawings"],
   ["Stories", "/stories"],
