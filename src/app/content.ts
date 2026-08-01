@@ -75,7 +75,7 @@ export const stories: { title: string; text: string }[] = [];
 export const blogPosts: { title: string; date: string; text: string }[] = [
   {
     title: "Atlanta, Here I Come!",
-    date: "August 7, 2026",
+    date: "July 26, 2026",
     text: `Hi peeps! On Friday I'm having an early morning flight to Atlanta from Philadelphia. I have to get up at 3:30 am 😬. Keep in mind I'm not a morning person so we shall see how that goes. This is my second time on an airplane.
 
 Our plans consist of aquarium, Stone Mountain, World of Coca Cola and possibly a bbq dinner like a true southern bbq. I'll take lots of pics to show yall my trip favs and highlights. I can't wait to try Atlanta restaurants for the first time!! I'll try to make a photo dump of my adventures, restaurants and sights to see!
