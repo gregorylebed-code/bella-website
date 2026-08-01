@@ -137,6 +137,14 @@ I also have a massive fun sock collection! So many cool designs, foods, animals.
 ];
 
 // -----------------------------
+// TIDBITS: AUTISM AND MORE
+// Short posts, facts, thoughts, or stories about autism, your brain,
+// or anything else you want to share here. Newest goes at the TOP.
+// Date format: "Month Day, Year" (e.g. "July 18, 2026")
+// -----------------------------
+export const tidbits: { title: string; date: string; text: string }[] = [];
+
+// -----------------------------
 // YOUTUBE VIDEOS
 // Paste the video ID from the URL.
 // Example: https://www.youtube.com/watch?v=dQw4w9WgXcQ -> ID is "dQw4w9WgXcQ"

@@ -8,6 +8,7 @@ import {
   drawings,
   stories,
   blogPosts,
+  tidbits,
   videos,
   youtubeChannelUrl,
   youtubeChannelName,
@@ -47,6 +48,7 @@ export default function Home() {
           ["Drawings", "#drawings"],
           ["Stories", "#stories"],
           ["Blog", "#blog"],
+          ["Tidbits: Autism and More", "#tidbits"],
           ["Videos", "#videos"],
         ].map(([label, href]) => (
           <a
@@ -126,6 +128,25 @@ export default function Home() {
                 <h3 className="heading-font text-2xl font-bold mb-1">{post.title}</h3>
                 <p className="text-sm text-foreground/60 font-medium mb-3">{post.date}</p>
                 <p className="whitespace-pre-line leading-relaxed">{post.text}</p>
+              </article>
+            ))}
+          </div>
+        )}
+      </section>
+
+      <section id="tidbits" className="relative z-10 max-w-3xl mx-auto px-4 py-10">
+        <h2 className="heading-font text-3xl font-bold text-white drop-shadow mb-6 text-center">
+          Tidbits: Autism and More
+        </h2>
+        {tidbits.length === 0 ? (
+          <EmptyState text="No tidbits yet, check back soon!" />
+        ) : (
+          <div className="flex flex-col gap-6">
+            {tidbits.map((t) => (
+              <article key={t.title} className="card p-6">
+                <h3 className="heading-font text-2xl font-bold mb-1">{t.title}</h3>
+                <p className="text-sm text-foreground/60 font-medium mb-3">{t.date}</p>
+                <p className="whitespace-pre-line leading-relaxed">{t.text}</p>
               </article>
             ))}
           </div>
