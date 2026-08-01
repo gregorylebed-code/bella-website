@@ -63,7 +63,7 @@ export default function Home() {
       </nav>
 
       <section id="pictures" className="relative z-10 max-w-5xl mx-auto px-4 py-10">
-        <h2 className="heading-font text-3xl font-bold text-white drop-shadow mb-6 text-center">
+        <h2 className="heading-font text-3xl font-bold text-black drop-shadow mb-6 text-center">
           Pictures
         </h2>
         {photos.length === 0 ? (
@@ -81,7 +81,7 @@ export default function Home() {
       </section>
 
       <section id="drawings" className="relative z-10 max-w-5xl mx-auto px-4 py-10">
-        <h2 className="heading-font text-3xl font-bold text-white drop-shadow mb-6 text-center">
+        <h2 className="heading-font text-3xl font-bold text-black drop-shadow mb-6 text-center">
           Drawings
         </h2>
         {drawings.length === 0 ? (
@@ -99,7 +99,7 @@ export default function Home() {
       </section>
 
       <section id="stories" className="relative z-10 max-w-3xl mx-auto px-4 py-10">
-        <h2 className="heading-font text-3xl font-bold text-white drop-shadow mb-6 text-center">
+        <h2 className="heading-font text-3xl font-bold text-black drop-shadow mb-6 text-center">
           Stories
         </h2>
         {stories.length === 0 ? (
@@ -117,7 +117,7 @@ export default function Home() {
       </section>
 
       <section id="blog" className="relative z-10 max-w-3xl mx-auto px-4 py-10">
-        <h2 className="heading-font text-3xl font-bold text-white drop-shadow mb-6 text-center">
+        <h2 className="heading-font text-3xl font-bold text-black drop-shadow mb-6 text-center">
           Blog
         </h2>
         {blogPosts.length === 0 ? (
@@ -136,7 +136,7 @@ export default function Home() {
       </section>
 
       <section id="tidbits" className="relative z-10 max-w-3xl mx-auto px-4 py-10">
-        <h2 className="heading-font text-3xl font-bold text-white drop-shadow mb-6 text-center">
+        <h2 className="heading-font text-3xl font-bold text-black drop-shadow mb-6 text-center">
           Tidbits: Autism and More
         </h2>
         {tidbits.length === 0 ? (
@@ -155,7 +155,7 @@ export default function Home() {
 
         {tidbitsFaq.length > 0 && (
           <div className="mt-10">
-            <h3 className="heading-font text-2xl font-bold text-white drop-shadow mb-6 text-center">
+            <h3 className="heading-font text-2xl font-bold text-black drop-shadow mb-6 text-center">
               FAQ
             </h3>
             <div className="flex flex-col gap-4">
@@ -171,7 +171,7 @@ export default function Home() {
       </section>
 
       <section id="videos" className="relative z-10 max-w-5xl mx-auto px-4 py-10">
-        <h2 className="heading-font text-3xl font-bold text-white drop-shadow mb-6 text-center">
+        <h2 className="heading-font text-3xl font-bold text-black drop-shadow mb-6 text-center">
           Videos
         </h2>
         {videos.length === 0 ? (
