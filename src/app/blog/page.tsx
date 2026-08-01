@@ -1,6 +1,7 @@
 import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
+import PostReactions from "../PostReactions";
 import { blogPosts } from "../content";
 
 export default function BlogPage() {
@@ -24,6 +25,7 @@ export default function BlogPage() {
                 <h3 className="heading-font text-2xl font-bold mb-1">{post.title}</h3>
                 <p className="text-sm text-foreground/60 font-medium mb-3">{post.date}</p>
                 <p className="whitespace-pre-line leading-relaxed">{post.text}</p>
+                <PostReactions postId={post.title} />
               </article>
             ))}
           </div>
