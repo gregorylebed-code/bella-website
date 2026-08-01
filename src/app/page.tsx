@@ -25,7 +25,7 @@ export default function Home() {
         <h1 className="heading-font text-5xl sm:text-6xl font-extrabold text-white drop-shadow-[0_3px_0_rgba(0,0,0,0.1)] mt-4">
           {siteName}
         </h1>
-        <p className="mt-3 text-lg sm:text-xl text-white/95 font-semibold drop-shadow">
+        <p className="mt-3 text-lg sm:text-xl text-black font-semibold drop-shadow">
           {tagline}
         </p>
         {youtubeChannelUrl && (
