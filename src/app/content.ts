@@ -94,7 +94,11 @@ The next day, just my mom and I took an Uber to the Atlanta Zoo. We saw flamingo
 
 Later that day, we were gonna leave to go to the airport, and our flight got delayed like five times, so we ended up staying a little bit longer. We went to a place called Scoops @ Peachtree and I got a mango gelato and it was delicious, very good for a hot and humid day. After that we went to the airport and had Panda Express for dinner, I got orange chicken and fried rice, and we split crab rangoon.
 
-Well, that was my trip to Atlanta. Thanks for listening to me yap.`,
+Well, that was my trip to Atlanta. Thanks for listening to me yap.
+
+A few extra bits since yall asked! My favorite animal at the zoo was the sea otter, but the penguins were a close second. At the aquarium, honestly the otters again. And I really loved seeing the elephants because we don't have elephants at our zoo back in Philadelphia anymore, and I miss them.
+
+There were definitely some overwhelming moments, since I was traveling with people I hadn't traveled with before, but I handled it like a champ, my mom said so herself. The aquarium crowds were really busy at times so I had to navigate my little body through there, which is always fun. As for the flight delays, honestly they didn't annoy me. Once it happened twice I was just like, it's gonna happen again, that's part of it.`,
   },
   {
     title: "Atlanta, Here I Come!",
