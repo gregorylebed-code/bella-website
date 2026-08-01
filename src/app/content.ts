@@ -74,6 +74,25 @@ export const stories: { title: string; text: string }[] = [];
 // -----------------------------
 export const blogPosts: { title: string; date: string; text: string }[] = [
   {
+    title: "Atlanta, Here I Come!",
+    date: "August 7, 2026",
+    text: `Hi peeps! On Friday I'm having an early morning flight to Atlanta from Philadelphia. I have to get up at 3:30 am 😬. Keep in mind I'm not a morning person so we shall see how that goes. This is my second time on an airplane.
+
+Our plans consist of aquarium, Stone Mountain, World of Coca Cola and possibly a bbq dinner like a true southern bbq. I'll take lots of pics to show yall my trip favs and highlights. I can't wait to try Atlanta restaurants for the first time!! I'll try to make a photo dump of my adventures, restaurants and sights to see!
+
+We are also going to Ponce City Market which has rooftop mini golf, skee ball, and rooftop restaurant, and stores all in one! A tourist dream right? I will be with my mom, her friend Tabatha and Tabatha's daughter Gia. Who knows I may just develop a southern accent while I'm here... keep in mind I'm a Jersey gal. So we say "Wuder" and not "wader" hahahaha!
+
+Fun fact: the Georgia Aquarium has over 500 species! And yes... my autism self will take a pic of each and every one for the photographic memory journal and I will remember them all. I even will have a window seat which is so cool!
+
+We will be at a hotel, ps hopefully the beds and pillows are cozy. But that may be just my sensory icks... I wonder what the window view from the hotel will look like. I usually take a pic at every hotel I go to at night.
+
+Fun fact: the aquarium takes 3-4 hours to go through, perfect for those who love memorizing random animals like me. It's been 10+ years since I've flown on a plane but I'm excited to embark on this journey. Sorry mom in advance if I don't shut up about all the animal pics later in the hotel.
+
+I am bringing protein bars and Pirate's Booty for the plane. I hear they give out trading cards sometimes... but I'm too socially awkward to ask, plus at 6:30 or so in the morning I won't be thinking. I wonder the difference between our bbq in Jersey vs the one in the south.
+
+If yall didn't know, food is my favorite four letter word. I'll peep up even if I'm mid sleep.`,
+  },
+  {
     title: "Welcome to Bella's World!",
     date: "July 18, 2026",
     text: `Hi, welcome to Bella's world! I'm 16 years of age! It's so nice to meet you all! Thank you for stopping by on my website. This is where I'll showcase my art, recipes, my cooking channel!
