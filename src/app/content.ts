@@ -74,6 +74,29 @@ export const stories: { title: string; text: string }[] = [];
 // -----------------------------
 export const blogPosts: { title: string; date: string; text: string }[] = [
   {
+    title: "My Atlanta Trip Recap!",
+    date: "August 1, 2026",
+    text: `Wow! What an awesome trip to Atlanta. I'm kinda in a whirlwind of emotions, like happy to be in NJ, sad missing all the Georgia peaches, and excited as I just had my first day of work ever.
+
+The plane ride there was awesome, this guy was so nice to help me carry my bags. Lucky for me I had a window seat, and I am a fun-sized Twix bar so I could squeeze anywhere. Although, I couldn't stand my ears constantly popping.
+
+Once we got to Atlanta we looked for 30 mins for a taxi and finally got one to the hotel. Keep in mind, I don't live in GA so... we had no clue where we were going (sorry GA residents). The hotel was nice. It was very cold in the lobby, but other than that it wasn't too bad. There was even a pool which sadly I didn't get to check out because we got downpoured on unfortunately. But it was really cool to stay in a hotel because I don't do that very often.
+
+We did a lot of unpacking, and then went to the aquarium, which has over 500 species, which is really cool. I had a walking taco while sitting down at the aquarium in a place called Seaside Delights. For brunch, we went to this place called Corner Bakery Cafe, and I got something called an Anaheim panini, and that was really good. We were at the aquarium for like six hours, which is crazy, but one of the people we were with is studying to be a marine biologist, so they were checking it out and really enjoyed that. So that's why we were there a while.
+
+For dinner that night we went to Max's Lager House. I'm not 21, so no beer and alcohol for me, don't you worry. I got this big fat cheeseburger with some of the best pickles ever, and the french fries kind of tasted like Five Guys french fries.
+
+The next day we went to a place called World of Coca-Cola. It was really cool. I splurged a little bit and added more socks to my sock collection, which I probably shouldn't have, but it's okay. And I got to try a soda from Thailand, which was really cool. We went to this really cool egg place and they had a really good bacon, egg, and cheese on a brioche bun. I won't say the name because it has a curse word in it, so we'll just call it "the egg."
+
+After Coca-Cola World, we went to Ponce City Market and checked out a couple stores. We had pizza at Jean's Pizza and it was really good, supposedly tastes just like New York style pizza. We split a key lime pie tart that was very good. For dinner we went to a place called Tin Lizzy's Cantina and I got three different types of tacos: a fried fish one, a fried chicken one, and a cheeseburger taco. It was very, very good.
+
+The next day, just my mom and I took an Uber to the Atlanta Zoo. We saw flamingos, elephants, rhinos, meerkats, lemurs, giraffes, ostriches, zebras, gorillas, turtles, and so many more cool things. The closest we could get to barbecue there was a place called Go Dawgs, we got barbecue loaded tots and they were spectacular. Sadly no barbecue ribs or mac and cheese like I was hoping, but that's okay, maybe next time.
+
+Later that day, we were gonna leave to go to the airport, and our flight got delayed like five times, so we ended up staying a little bit longer. We went to a place called Scoops @ Peachtree and I got a mango gelato and it was delicious, very good for a hot and humid day. After that we went to the airport and had Panda Express for dinner, I got orange chicken and fried rice, and we split crab rangoon.
+
+Well, that was my trip to Atlanta. Thanks for listening to me yap.`,
+  },
+  {
     title: "Atlanta, Here I Come!",
     date: "July 26, 2026",
     text: `Hi peeps! On Friday I'm having an early morning flight to Atlanta from Philadelphia. I have to get up at 3:30 am 😬. Keep in mind I'm not a morning person so we shall see how that goes. This is my second time on an airplane.
