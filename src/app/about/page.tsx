@@ -42,7 +42,7 @@ export default function AboutPage() {
         )}
       </section>
 
-      <footer className="relative z-10 text-center py-8 text-white/90 font-medium">
+      <footer className="relative z-10 text-center py-8 text-blue-600 font-medium">
         Made with love by Bella
       </footer>
     </main>
