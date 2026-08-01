@@ -1,6 +1,7 @@
 import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
+import RandomDrawingButton from "./RandomDrawingButton";
 import { drawings } from "../content";
 
 export default function DrawingsPage() {
@@ -18,6 +19,8 @@ export default function DrawingsPage() {
         {drawings.length === 0 ? (
           <EmptyState text="No drawings yet, check back soon!" />
         ) : (
+          <>
+          <RandomDrawingButton drawings={drawings} />
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {drawings.map((d) => (
               <figure key={d.src} className="card overflow-hidden">
@@ -26,6 +29,7 @@ export default function DrawingsPage() {
               </figure>
             ))}
           </div>
+          </>
         )}
       </section>
 
