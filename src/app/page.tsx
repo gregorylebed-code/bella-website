@@ -9,6 +9,7 @@ import {
   stories,
   blogPosts,
   tidbits,
+  tidbitsFaq,
   videos,
   youtubeChannelUrl,
   youtubeChannelName,
@@ -149,6 +150,22 @@ export default function Home() {
                 <p className="whitespace-pre-line leading-relaxed">{t.text}</p>
               </article>
             ))}
+          </div>
+        )}
+
+        {tidbitsFaq.length > 0 && (
+          <div className="mt-10">
+            <h3 className="heading-font text-2xl font-bold text-white drop-shadow mb-6 text-center">
+              FAQ
+            </h3>
+            <div className="flex flex-col gap-4">
+              {tidbitsFaq.map((item) => (
+                <div key={item.q} className="card p-5">
+                  <p className="heading-font font-bold mb-2">{item.q}</p>
+                  <p className="leading-relaxed">{item.a}</p>
+                </div>
+              ))}
+            </div>
           </div>
         )}
       </section>

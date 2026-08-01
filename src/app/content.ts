@@ -145,6 +145,33 @@ I also have a massive fun sock collection! So many cool designs, foods, animals.
 export const tidbits: { title: string; date: string; text: string }[] = [];
 
 // -----------------------------
+// TIDBITS FAQ
+// Common questions people ask, answered in your own words.
+// -----------------------------
+export const tidbitsFaq: { q: string; a: string }[] = [
+  {
+    q: "What is autism, in your own words?",
+    a: "It's just a different way my brain works, how I think, feel, and experience the world. It's part of who I am, not something wrong with me.",
+  },
+  {
+    q: "What's something people get wrong about autism?",
+    a: "People think it looks the same for everyone. It doesn't. I can handle plane rides and new people like a champ one day and get overwhelmed by a busy aquarium crowd the next. Both are normal for me.",
+  },
+  {
+    q: "What helps you when you feel overwhelmed?",
+    a: "Having a plan helps, and so does having people around who don't rush me. I just need to navigate things at my own pace.",
+  },
+  {
+    q: "Why do you love random facts so much?",
+    a: "I have a really strong memory for details, so things like Pokemon silhouettes or 500 species at an aquarium just stick with me. It's one of my favorite things about my brain.",
+  },
+  {
+    q: "What do you want people to know about talking to someone autistic?",
+    a: "Just talk to me like a normal person. I'm funny, I love food, I have opinions on socks. Autism is part of me, not all of me.",
+  },
+];
+
+// -----------------------------
 // YOUTUBE VIDEOS
 // Paste the video ID from the URL.
 // Example: https://www.youtube.com/watch?v=dQw4w9WgXcQ -> ID is "dQw4w9WgXcQ"
