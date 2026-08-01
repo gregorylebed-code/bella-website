@@ -50,6 +50,14 @@ export const drawings: { src: string; caption: string }[] = [
   { src: "/drawings/bella-drawing-18.png", caption: "Rainy Day Bear" },
   { src: "/drawings/bella-drawing-19.png", caption: "Uncle Gary" },
   { src: "/drawings/bella-drawing-20.png", caption: "Peter Griffin" },
+  { src: "/drawings/bella-drawing-21.png", caption: "Skateboarding Hot Dog (with Burger, Ketchup & Mustard)" },
+  { src: "/drawings/bella-drawing-22.png", caption: "Grumpy Pickle" },
+  { src: "/drawings/bella-drawing-23.png", caption: "Nervous Egg & Bacon" },
+  { src: "/drawings/bella-drawing-24.png", caption: "Overwhelmed Burrito" },
+  { src: "/drawings/bella-drawing-25.png", caption: "Pizza Slice Monster" },
+  { src: "/drawings/bella-drawing-26.png", caption: "Milk & Cookie" },
+  { src: "/drawings/bella-drawing-27.png", caption: "Happy Cat at Dinner" },
+  { src: "/drawings/bella-drawing-28.png", caption: "Kool-Aid Cup" },
 ];
 
 // -----------------------------
