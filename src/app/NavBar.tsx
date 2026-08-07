@@ -6,6 +6,7 @@ const links: [string, string][] = [
   ["Blog", "/blog"],
   ["Tidbits: Autism and More", "/tidbits"],
   ["Videos", "/videos"],
+  ["Affirmations", "/affirmations"],
   ["Guestbook", "/guestbook"],
 ];
 

@@ -183,6 +183,21 @@ export const tidbitsFaq: { q: string; a: string }[] = [
 ];
 
 // -----------------------------
+// AFFIRMATIONS
+// Things you'd say to motivate someone else. Add as many as you want,
+// the page picks a random one each time someone clicks the button.
+// -----------------------------
+export const affirmations: string[] = [
+  "You are doing better than you think you are.",
+  "It's okay to go at your own pace, there's no rush.",
+  "You handled that like a champ, be proud of yourself.",
+  "Your brain works differently, not wrong.",
+  "You are allowed to take up space and be exactly who you are.",
+  "One overwhelming moment doesn't erase all the good ones.",
+  "You are worthy of love and kindness, especially from yourself.",
+];
+
+// -----------------------------
 // YOUTUBE VIDEOS
 // Paste the video ID from the URL.
 // Example: https://www.youtube.com/watch?v=dQw4w9WgXcQ -> ID is "dQw4w9WgXcQ"
