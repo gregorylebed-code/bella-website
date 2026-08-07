@@ -2,7 +2,7 @@ import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
 import { supabase } from "@/lib/supabase";
-import { postMessage, signUpEmail, suggestDrawing } from "./actions";
+import { postMessage, signUpEmail } from "./actions";
 
 export const dynamic = "force-dynamic";
 
@@ -68,35 +68,6 @@ export default async function GuestbookPage() {
               className="heading-font px-6 py-2 rounded-full bg-pink-500 hover:bg-pink-600 text-white font-bold shadow-md hover:scale-105 transition-transform"
             >
               Sign Up
-            </button>
-          </form>
-        </div>
-
-        <div className="card p-6 mb-8">
-          <h3 className="heading-font text-xl font-bold mb-3">Suggest a Drawing! 🎨</h3>
-          <p className="text-sm text-foreground/70 mb-3">
-            Got an idea for what I should draw next? Tell me!
-          </p>
-          <form action={suggestDrawing} className="flex flex-col gap-3">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your name"
-              required
-              className="w-full px-5 py-2 rounded-full bg-white/90 shadow-sm font-medium focus:outline-none focus:ring-2 focus:ring-purple-400"
-            />
-            <textarea
-              name="suggestion"
-              placeholder="What should I draw?"
-              required
-              rows={2}
-              className="w-full px-5 py-3 rounded-2xl bg-white/90 shadow-sm font-medium focus:outline-none focus:ring-2 focus:ring-purple-400"
-            />
-            <button
-              type="submit"
-              className="heading-font self-start px-6 py-2 rounded-full bg-orange-400 hover:bg-orange-500 text-white font-bold shadow-md hover:scale-105 transition-transform"
-            >
-              Send Idea
             </button>
           </form>
         </div>

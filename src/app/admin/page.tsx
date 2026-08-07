@@ -55,21 +55,16 @@ export default async function AdminPage() {
 }
 
 async function AdminData() {
-  const [{ data: emails }, { data: messages }, { data: suggestions }] =
-    await Promise.all([
-      supabase
-        .from("email_signups")
-        .select("email, created_at")
-        .order("created_at", { ascending: false }),
-      supabase
-        .from("messages")
-        .select("id, name, message, created_at")
-        .order("created_at", { ascending: false }),
-      supabase
-        .from("drawing_suggestions")
-        .select("id, name, suggestion, created_at")
-        .order("created_at", { ascending: false }),
-    ]);
+  const [{ data: emails }, { data: messages }] = await Promise.all([
+    supabase
+      .from("email_signups")
+      .select("email, created_at")
+      .order("created_at", { ascending: false }),
+    supabase
+      .from("messages")
+      .select("id, name, message, created_at")
+      .order("created_at", { ascending: false }),
+  ]);
 
   return (
     <div className="flex flex-col gap-8">
@@ -120,26 +115,6 @@ async function AdminData() {
                 <p className="leading-relaxed">{m.message}</p>
                 <p className="text-sm text-foreground/60 font-medium mt-2">
                   — {m.name} · {new Date(m.created_at).toLocaleDateString()}
-                </p>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-
-      <div>
-        <h3 className="heading-font text-2xl font-bold mb-4">
-          Drawing Suggestions ({suggestions?.length ?? 0})
-        </h3>
-        {!suggestions || suggestions.length === 0 ? (
-          <EmptyState text="No drawing suggestions yet." />
-        ) : (
-          <div className="flex flex-col gap-3">
-            {suggestions.map((s) => (
-              <div key={s.id} className="card p-4">
-                <p className="leading-relaxed">{s.suggestion}</p>
-                <p className="text-sm text-foreground/60 font-medium mt-2">
-                  — {s.name} · {new Date(s.created_at).toLocaleDateString()}
                 </p>
               </div>
             ))}
