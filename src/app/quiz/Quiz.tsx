@@ -29,9 +29,11 @@ export default function Quiz({
   }
 
   if (step >= questions.length) {
-    const winner = (Object.keys(tally) as Vibe[]).reduce((a, b) =>
-      tally[b] > tally[a] ? b : a
+    const maxCount = Math.max(...Object.values(tally));
+    const topVibes = (Object.keys(tally) as Vibe[]).filter(
+      (v) => tally[v] === maxCount
     );
+    const winner = topVibes[Math.floor(Math.random() * topVibes.length)];
     const result = results[winner];
     const drawing = drawings.find((d) => d.caption === result.caption);
 

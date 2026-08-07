@@ -11,6 +11,7 @@ export const questions: {
       { label: "Watching cartoons in bed", vibe: "cozy" },
       { label: "Doing voice impressions for no reason", vibe: "goofy" },
       { label: "Chilling outside with music on", vibe: "chill" },
+      { label: "Already planning something bold", vibe: "spicy" },
     ],
   },
   {
@@ -20,6 +21,7 @@ export const questions: {
       { label: "Milk and cookies", vibe: "cozy" },
       { label: "Pirate's Booty", vibe: "chill" },
       { label: "A giant cheeseburger", vibe: "hungry" },
+      { label: "Whatever makes people laugh to say out loud", vibe: "goofy" },
     ],
   },
   {
@@ -29,6 +31,7 @@ export const questions: {
       { label: "Find a quiet corner and reset", vibe: "cozy" },
       { label: "Crack a joke to lighten the mood", vibe: "goofy" },
       { label: "Just go with the flow", vibe: "chill" },
+      { label: "Get distracted thinking about food", vibe: "hungry" },
     ],
   },
   {
@@ -38,6 +41,7 @@ export const questions: {
       { label: "Nap under a blanket", vibe: "cozy" },
       { label: "Cook something new", vibe: "hungry" },
       { label: "People-watch by the window", vibe: "chill" },
+      { label: "Turn it into an adventure anyway", vibe: "spicy" },
     ],
   },
   {
@@ -47,15 +51,7 @@ export const questions: {
       { label: "The chill one", vibe: "chill" },
       { label: "The one who's always hungry", vibe: "hungry" },
       { label: "The one who keeps it real", vibe: "spicy" },
-    ],
-  },
-  {
-    q: "Pick a road trip snack for the car.",
-    options: [
-      { label: "Protein bars, gotta be practical", vibe: "chill" },
-      { label: "Something spicy to stay awake", vibe: "spicy" },
-      { label: "Whatever's the most comforting", vibe: "cozy" },
-      { label: "All of it, I'm always hungry", vibe: "hungry" },
+      { label: "The one who makes everything cozy", vibe: "cozy" },
     ],
   },
 ];
