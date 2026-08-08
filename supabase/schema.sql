@@ -30,3 +30,32 @@ create policy "public can insert messages"
 create policy "public can insert email signups"
   on email_signups for insert
   with check (true);
+
+create table if not exists questions (
+  id uuid primary key default gen_random_uuid(),
+  name text,
+  question text not null,
+  answer text,
+  created_at timestamptz not null default now(),
+  answered_at timestamptz
+);
+
+alter table questions enable row level security;
+
+-- Anyone can submit a question
+create policy "public can insert questions"
+  on questions for insert
+  with check (true);
+
+-- Anyone can read questions (the /ask page only displays answered ones
+-- client-side; the admin page, password-gated in the app, also needs to
+-- see unanswered ones using this same anon key).
+create policy "public can read questions"
+  on questions for select
+  using (true);
+
+-- Admin page needs to save answers.
+create policy "public can update questions"
+  on questions for update
+  using (true)
+  with check (true);

@@ -11,6 +11,7 @@ const links: [string, string][] = [
   ["Videos", "/videos"],
   ["Affirmations", "/affirmations"],
   ["Quiz", "/quiz"],
+  ["Ask Bella", "/ask"],
 ];
 
 const NEW_WINDOW_DAYS = 14;

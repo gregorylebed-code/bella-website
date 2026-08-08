@@ -21,3 +21,13 @@ export async function signUpEmail(formData: FormData) {
   await supabase.from("email_signups").insert({ email });
   revalidatePath("/");
 }
+
+export async function submitQuestion(formData: FormData) {
+  const name = String(formData.get("name") ?? "").trim();
+  const question = String(formData.get("question") ?? "").trim();
+
+  if (!question) return;
+
+  await supabase.from("questions").insert({ name: name || null, question });
+  revalidatePath("/ask");
+}

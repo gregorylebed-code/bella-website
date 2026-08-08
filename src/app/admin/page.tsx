@@ -3,7 +3,7 @@ import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
 import { supabase } from "@/lib/supabase";
-import { login, logout } from "./actions";
+import { login, logout, answerQuestion } from "./actions";
 
 export const dynamic = "force-dynamic";
 
@@ -55,7 +55,7 @@ export default async function AdminPage() {
 }
 
 async function AdminData() {
-  const [{ data: emails }, { data: messages }] = await Promise.all([
+  const [{ data: emails }, { data: messages }, { data: questions }] = await Promise.all([
     supabase
       .from("email_signups")
       .select("email, created_at")
@@ -64,7 +64,14 @@ async function AdminData() {
       .from("messages")
       .select("id, name, message, created_at")
       .order("created_at", { ascending: false }),
+    supabase
+      .from("questions")
+      .select("id, name, question, answer, created_at")
+      .order("created_at", { ascending: false }),
   ]);
+
+  const pendingQuestions = questions?.filter((q) => !q.answer) ?? [];
+  const answeredQuestions = questions?.filter((q) => q.answer) ?? [];
 
   return (
     <div className="flex flex-col gap-8">
@@ -116,6 +123,61 @@ async function AdminData() {
                 <p className="text-sm text-foreground/60 font-medium mt-2">
                   — {m.name} · {new Date(m.created_at).toLocaleDateString()}
                 </p>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <div>
+        <h3 className="heading-font text-2xl font-bold mb-4">
+          Questions to Answer ({pendingQuestions.length})
+        </h3>
+        {pendingQuestions.length === 0 ? (
+          <EmptyState text="No pending questions." />
+        ) : (
+          <div className="flex flex-col gap-3">
+            {pendingQuestions.map((q) => (
+              <div key={q.id} className="card p-4">
+                <p className="leading-relaxed font-medium">{q.question}</p>
+                <p className="text-sm text-foreground/60 mt-1 mb-3">
+                  {q.name ? `— ${q.name} · ` : ""}
+                  {new Date(q.created_at).toLocaleDateString()}
+                </p>
+                <form action={answerQuestion} className="flex flex-col gap-2">
+                  <input type="hidden" name="id" value={q.id} />
+                  <textarea
+                    name="answer"
+                    placeholder="Write your answer..."
+                    required
+                    rows={2}
+                    className="w-full px-4 py-2 rounded-2xl bg-white/90 shadow-sm font-medium focus:outline-none focus:ring-2 focus:ring-purple-400"
+                  />
+                  <button
+                    type="submit"
+                    className="heading-font self-start px-5 py-1.5 rounded-full bg-purple-500 hover:bg-purple-600 text-white text-sm font-bold shadow-md hover:scale-105 transition-transform"
+                  >
+                    Post Answer
+                  </button>
+                </form>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <div>
+        <h3 className="heading-font text-2xl font-bold mb-4">
+          Answered Questions ({answeredQuestions.length})
+        </h3>
+        {answeredQuestions.length === 0 ? (
+          <EmptyState text="No answered questions yet." />
+        ) : (
+          <div className="flex flex-col gap-3">
+            {answeredQuestions.map((q) => (
+              <div key={q.id} className="card p-4">
+                <p className="leading-relaxed font-medium">{q.question}</p>
+                <p className="leading-relaxed text-foreground/80 mt-2">{q.answer}</p>
               </div>
             ))}
           </div>

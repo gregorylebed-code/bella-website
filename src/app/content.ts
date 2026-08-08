@@ -235,4 +235,5 @@ export const sectionUpdates: Record<string, string> = {
   Videos: "2026-07-11",
   Affirmations: "2026-07-11",
   Quiz: "2026-08-01",
+  "Ask Bella": "2026-08-08",
 };

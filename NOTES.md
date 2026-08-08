@@ -18,3 +18,4 @@ Running list of ideas and small decisions for Bella's site. Not tracked anywhere
 ## Decisions
 - Rainbow palette used site-wide (Rainbow.tsx stripes, now also the favicon): `#ff5c5c #ff9f43 #ffd93d #6bcB77 #4d96ff #9b5de5`.
 - "NEW" badges on nav buttons (added 2026-08-08): driven by `sectionUpdates` in `content.ts` (a date per section) plus the newest blog post's date. Any section updated within the last 14 days shows a badge. When adding content to a section, bump its date in `sectionUpdates` to today so the badge shows.
+- "Ask Bella" Q&A (added 2026-08-08): new `/ask` page, visitors submit a question via `questions` table in Supabase, Bella answers from the admin page. Only answered questions show publicly. Needs the `questions` table created in Supabase (see `supabase/schema.sql`) before it works live — run the new block in the SQL Editor.
