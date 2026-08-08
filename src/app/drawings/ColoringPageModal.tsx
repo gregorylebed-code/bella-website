@@ -17,13 +17,19 @@ function toColoringPage(canvas: HTMLCanvasElement, img: HTMLImageElement) {
   ctx.drawImage(img, 0, 0, w, h);
 
   const src = ctx.getImageData(0, 0, w, h);
-  const gray = new Float32Array(w * h);
-  for (let i = 0; i < w * h; i++) {
-    const r = src.data[i * 4];
-    const g = src.data[i * 4 + 1];
-    const b = src.data[i * 4 + 2];
-    gray[i] = 0.299 * r + 0.587 * g + 0.114 * b;
-  }
+  // Run edge detection per color channel instead of flattening to
+  // luminance first. Pale, low-luminance-contrast colors like yellow
+  // and tan barely move the luminance value against a white background,
+  // so a luminance-only edge detector misses or mangles those outlines.
+  // The blue channel especially still drops off hard for yellow/tan
+  // against white, so taking the strongest edge across R, G, B catches
+  // those cases while leaving darker colors (already strong in luminance)
+  // unaffected.
+  const channels = [0, 1, 2].map((c) => {
+    const chan = new Float32Array(w * h);
+    for (let i = 0; i < w * h; i++) chan[i] = src.data[i * 4 + c];
+    return chan;
+  });
 
   const out = ctx.createImageData(w, h);
   const gx = [-1, 0, 1, -2, 0, 2, -1, 0, 1];
@@ -31,21 +37,25 @@ function toColoringPage(canvas: HTMLCanvasElement, img: HTMLImageElement) {
 
   for (let y = 0; y < h; y++) {
     for (let x = 0; x < w; x++) {
-      let sx = 0;
-      let sy = 0;
+      let maxEdge = 0;
       if (x > 0 && x < w - 1 && y > 0 && y < h - 1) {
-        let k = 0;
-        for (let ky = -1; ky <= 1; ky++) {
-          for (let kx = -1; kx <= 1; kx++) {
-            const val = gray[(y + ky) * w + (x + kx)];
-            sx += val * gx[k];
-            sy += val * gy[k];
-            k++;
+        for (const chan of channels) {
+          let sx = 0;
+          let sy = 0;
+          let k = 0;
+          for (let ky = -1; ky <= 1; ky++) {
+            for (let kx = -1; kx <= 1; kx++) {
+              const val = chan[(y + ky) * w + (x + kx)];
+              sx += val * gx[k];
+              sy += val * gy[k];
+              k++;
+            }
           }
+          const edge = Math.sqrt(sx * sx + sy * sy);
+          if (edge > maxEdge) maxEdge = edge;
         }
       }
-      const edge = Math.sqrt(sx * sx + sy * sy);
-      const isLine = edge > 90;
+      const isLine = maxEdge > 70;
       const idx = (y * w + x) * 4;
       const shade = isLine ? 0 : 255;
       out.data[idx] = shade;
