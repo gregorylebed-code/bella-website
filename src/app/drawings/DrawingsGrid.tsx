@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import EmptyState from "../EmptyState";
+import ColoringPageModal from "./ColoringPageModal";
 
 const FAVORITES_KEY = "bella-favorite-drawings";
 
@@ -13,6 +14,7 @@ export default function DrawingsGrid({
   const [query, setQuery] = useState("");
   const [favorites, setFavorites] = useState<string[]>([]);
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+  const [coloringPick, setColoringPick] = useState<{ src: string; caption: string } | null>(null);
 
   useEffect(() => {
     const stored = localStorage.getItem(FAVORITES_KEY);
@@ -73,11 +75,21 @@ export default function DrawingsGrid({
                   {isFavorite ? "❤️" : "🤍"}
                 </button>
                 <img src={d.src} alt={d.caption} className="w-full aspect-square object-cover" />
+                <button
+                  onClick={() => setColoringPick(d)}
+                  className="heading-font w-full py-1.5 text-xs font-bold bg-white/90 hover:bg-white border-t"
+                >
+                  🖍️ Coloring Page
+                </button>
                 <figcaption className="p-2 text-sm text-center font-medium">{d.caption}</figcaption>
               </figure>
             );
           })}
         </div>
+      )}
+
+      {coloringPick && (
+        <ColoringPageModal drawing={coloringPick} onClose={() => setColoringPick(null)} />
       )}
     </>
   );
