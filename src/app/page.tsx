@@ -1,7 +1,10 @@
 import Clouds from "./Clouds";
 import Rainbow from "./Rainbow";
 import NavBar from "./NavBar";
+import Guestbook from "./Guestbook";
 import { siteName, tagline, youtubeChannelUrl, youtubeChannelName } from "./content";
+
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
@@ -30,6 +33,8 @@ export default function Home() {
           </a>
         )}
       </section>
+
+      <Guestbook />
 
       <NavBar />
 

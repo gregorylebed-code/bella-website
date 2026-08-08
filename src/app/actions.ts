@@ -10,7 +10,7 @@ export async function postMessage(formData: FormData) {
   if (!name || !message) return;
 
   await supabase.from("messages").insert({ name, message });
-  revalidatePath("/guestbook");
+  revalidatePath("/");
 }
 
 export async function signUpEmail(formData: FormData) {
@@ -19,5 +19,5 @@ export async function signUpEmail(formData: FormData) {
   if (!email) return;
 
   await supabase.from("email_signups").insert({ email });
-  revalidatePath("/guestbook");
+  revalidatePath("/");
 }

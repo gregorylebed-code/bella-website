@@ -9,7 +9,6 @@ const links: [string, string][] = [
   ["Videos", "/videos"],
   ["Affirmations", "/affirmations"],
   ["Quiz", "/quiz"],
-  ["Guestbook", "/guestbook"],
 ];
 
 export default function NavBar() {
