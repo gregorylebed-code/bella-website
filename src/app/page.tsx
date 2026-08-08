@@ -34,9 +34,9 @@ export default function Home() {
         )}
       </section>
 
-      <Guestbook />
-
       <NavBar />
+
+      <Guestbook />
 
       <footer className="relative z-10 text-center py-8 text-blue-600 font-medium">
         Made with love by Bella
