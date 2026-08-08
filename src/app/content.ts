@@ -218,3 +218,21 @@ export const recipes: {
 export const videos: { id: string; title: string }[] = [
   // { id: "dQw4w9WgXcQ", title: "My latest video!" },
 ];
+
+// -----------------------------
+// "NEW" BADGES
+// Whenever you add something to a section above (a drawing, a photo, a
+// recipe, a video, etc.), bump that section's date here to today's date
+// ("YYYY-MM-DD"). Any section updated in the last 14 days shows a little
+// "NEW" badge on its nav button. Blog posts get their badge automatically
+// from the newest post's date, no need to touch it here.
+// -----------------------------
+export const sectionUpdates: Record<string, string> = {
+  Pictures: "2026-07-11",
+  Drawings: "2026-07-11",
+  Recipes: "2026-08-01",
+  Tidbits: "2026-07-11",
+  Videos: "2026-07-11",
+  Affirmations: "2026-07-11",
+  Quiz: "2026-08-01",
+};
