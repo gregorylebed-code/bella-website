@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import EmptyState from "../EmptyState";
 import ColoringPageModal from "./ColoringPageModal";
+import ColoringBookButton from "./ColoringBookButton";
 
 const FAVORITES_KEY = "bella-favorite-drawings";
 
@@ -51,6 +52,10 @@ export default function DrawingsGrid({
         >
           ❤️ Favorites Only
         </button>
+      </div>
+
+      <div className="flex justify-center mb-6">
+        <ColoringBookButton drawings={filtered} />
       </div>
 
       {filtered.length === 0 ? (
