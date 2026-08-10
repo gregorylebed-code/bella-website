@@ -23,6 +23,17 @@ export async function logout() {
   cookieStore.delete("bella-admin");
 }
 
+export async function deleteMessage(formData: FormData) {
+  const id = String(formData.get("id") ?? "");
+
+  if (!id) return;
+
+  await supabase.from("messages").delete().eq("id", id);
+
+  revalidatePath("/admin");
+  revalidatePath("/");
+}
+
 export async function answerQuestion(formData: FormData) {
   const id = String(formData.get("id") ?? "");
   const answer = String(formData.get("answer") ?? "").trim();

@@ -3,7 +3,7 @@ import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
 import { supabase } from "@/lib/supabase";
-import { login, logout, answerQuestion } from "./actions";
+import { login, logout, answerQuestion, deleteMessage } from "./actions";
 
 export const dynamic = "force-dynamic";
 
@@ -118,11 +118,22 @@ async function AdminData() {
         ) : (
           <div className="flex flex-col gap-3">
             {messages.map((m) => (
-              <div key={m.id} className="card p-4">
-                <p className="leading-relaxed">{m.message}</p>
-                <p className="text-sm text-foreground/60 font-medium mt-2">
-                  — {m.name} · {new Date(m.created_at).toLocaleDateString()}
-                </p>
+              <div key={m.id} className="card p-4 flex justify-between items-start gap-4">
+                <div>
+                  <p className="leading-relaxed">{m.message}</p>
+                  <p className="text-sm text-foreground/60 font-medium mt-2">
+                    — {m.name} · {new Date(m.created_at).toLocaleDateString()}
+                  </p>
+                </div>
+                <form action={deleteMessage}>
+                  <input type="hidden" name="id" value={m.id} />
+                  <button
+                    type="submit"
+                    className="heading-font shrink-0 px-4 py-1.5 rounded-full bg-red-500 hover:bg-red-600 text-white text-sm font-bold shadow-md hover:scale-105 transition-transform"
+                  >
+                    Delete
+                  </button>
+                </form>
               </div>
             ))}
           </div>
