@@ -6,6 +6,8 @@ import { supabase } from "@/lib/supabase";
 import { login, logout, answerQuestion, deleteMessage } from "./actions";
 
 export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+export const revalidate = 0;
 
 export default async function AdminPage() {
   const cookieStore = await cookies();
