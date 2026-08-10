@@ -28,7 +28,12 @@ export async function deleteMessage(formData: FormData) {
 
   if (!id) return;
 
-  await supabase.from("messages").delete().eq("id", id);
+  const { error } = await supabase.from("messages").delete().eq("id", id);
+
+  if (error) {
+    console.error("deleteMessage failed:", error.message);
+    throw new Error(`Could not delete message: ${error.message}`);
+  }
 
   revalidatePath("/admin");
   revalidatePath("/");
