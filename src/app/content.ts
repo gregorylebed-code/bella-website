@@ -78,7 +78,12 @@ export const pets: {
 export const bucketList: { food: string[]; life: string[]; travel: string[] } = {
   food: ["Go to all of South Jersey's restaurants", "Try new sushi roll types"],
   life: ["Hit 1k subs on Bella's Bistro", "Become a therapist for neurodivergent people like myself"],
-  travel: [],
+  travel: [
+    "Travel through all of the East Coast and West Coast",
+    "Go to Germany and try authentic schnitzel",
+    "Go to Paris for the Eiffel Tower",
+    "Visit family in Hornchurch, London",
+  ],
 };
 
 // -----------------------------
