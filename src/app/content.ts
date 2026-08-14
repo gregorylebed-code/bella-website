@@ -72,6 +72,16 @@ export const pets: {
 ];
 
 // -----------------------------
+// BUCKET LIST
+// Sorted into Food, Life, and Travel. Add as many as you want.
+// -----------------------------
+export const bucketList: { food: string[]; life: string[]; travel: string[] } = {
+  food: ["Go to all of South Jersey's restaurants", "Try new sushi roll types"],
+  life: ["Hit 1k subs on Bella's Bistro", "Become a therapist for neurodivergent people like myself"],
+  travel: [],
+};
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"
@@ -289,4 +299,5 @@ export const sectionUpdates: Record<string, string> = {
   Quiz: "2026-08-01",
   "Ask Bella": "2026-08-08",
   Pets: "2026-08-14",
+  "Bucket List": "2026-08-14",
 };
