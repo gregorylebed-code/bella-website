@@ -3,7 +3,8 @@ import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
 import { supabase } from "@/lib/supabase";
-import { login, logout, answerQuestion, deleteMessage } from "./actions";
+import { login, logout, answerQuestion } from "./actions";
+import DeleteMessageButton from "./DeleteMessageButton";
 
 export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
@@ -127,15 +128,7 @@ async function AdminData() {
                     — {m.name} · {new Date(m.created_at).toLocaleDateString()}
                   </p>
                 </div>
-                <form action={deleteMessage}>
-                  <input type="hidden" name="id" value={m.id} />
-                  <button
-                    type="submit"
-                    className="heading-font shrink-0 px-4 py-1.5 rounded-full bg-red-500 hover:bg-red-600 text-white text-sm font-bold shadow-md hover:scale-105 transition-transform"
-                  >
-                    Delete
-                  </button>
-                </form>
+                <DeleteMessageButton id={m.id} />
               </div>
             ))}
           </div>
