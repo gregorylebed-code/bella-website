@@ -237,7 +237,6 @@ export const tidbits: { title: string; date: string; text: string }[] = [];
 export const autismSuperpowers: string[] = [
   "Photographic memory for random facts",
   "Strong sense for details",
-  "Can do voice impressions of Marge, Stewie, Homer, and Stitch",
   "Handles new experiences like a champ, even the overwhelming ones",
   "Deeply loyal and empathetic to family, friends, and pets",
 ];
