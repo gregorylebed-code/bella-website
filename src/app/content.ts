@@ -81,12 +81,15 @@ export const bucketList: { food: string[]; life: string[]; travel: string[] } = 
     "Hit 1k subs on Bella's Bistro",
     "Become a therapist for neurodivergent people like myself",
     "Be an old cat lady with 10 cats",
+    "Get her own cooking show or cooking segment",
+    "Learn a third language fluently",
   ],
   travel: [
     "Travel through all of the East Coast and West Coast",
     "Go to Germany and try authentic schnitzel",
     "Go to Paris for the Eiffel Tower",
     "Visit family in Hornchurch, London",
+    "Take a cooking class in another country",
   ],
 };
 
