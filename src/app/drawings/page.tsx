@@ -3,7 +3,8 @@ import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
 import RandomDrawingButton from "./RandomDrawingButton";
 import DrawingsGrid from "./DrawingsGrid";
-import { drawings } from "../content";
+import DrawPromptGenerator from "./DrawPromptGenerator";
+import { drawings, drawingPrompts } from "../content";
 
 export default function DrawingsPage() {
   return (
@@ -17,6 +18,16 @@ export default function DrawingsPage() {
         <h2 className="heading-font text-3xl font-bold text-black drop-shadow mb-6 text-center">
           Drawings
         </h2>
+
+        {drawingPrompts.length > 0 && (
+          <>
+            <h3 className="heading-font text-2xl font-bold text-black drop-shadow mb-4 text-center">
+              Draw With Me
+            </h3>
+            <DrawPromptGenerator prompts={drawingPrompts} />
+          </>
+        )}
+
         {drawings.length === 0 ? (
           <EmptyState text="No drawings yet, check back soon!" />
         ) : (

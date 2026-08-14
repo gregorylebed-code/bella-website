@@ -176,6 +176,26 @@ export const drawings: { src: string; caption: string }[] = [
 ];
 
 // -----------------------------
+// DRAW WITH ME PROMPTS
+// Random drawing prompt generator. Add as many as you want, the
+// page picks one at random each time someone clicks the button.
+// -----------------------------
+export const drawingPrompts: string[] = [
+  "A nervous slice of pizza",
+  "Your pet as a superhero",
+  "A grumpy breakfast food",
+  "A monster made of your favorite snack",
+  "A sleepy animal wearing socks",
+  "A food that's having the best day ever",
+  "Your favorite cartoon character as an animal",
+  "A rainbow-colored creature",
+  "A food mashup nobody's tried before",
+  "An overwhelmed vegetable having a rough day",
+  "A dog wearing a chef hat",
+  "Your dream dessert as a character",
+];
+
+// -----------------------------
 // BLOG
 // Write about anything: your day, something you're excited about,
 // whatever you want. Newest posts should go at the TOP of the list.
@@ -348,7 +368,7 @@ export const videos: { id: string; title: string }[] = [
 // -----------------------------
 export const sectionUpdates: Record<string, string> = {
   Pictures: "2026-07-11",
-  Drawings: "2026-07-11",
+  Drawings: "2026-08-14",
   "Ausome Autism": "2026-08-14",
   "Build Bella's Plate": "2026-08-14",
   Videos: "2026-07-11",
