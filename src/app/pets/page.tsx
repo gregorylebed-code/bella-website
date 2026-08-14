@@ -45,6 +45,14 @@ export default function PetsPage() {
                     </span>
                   ))}
                 </div>
+                <div className="w-full text-left text-sm mt-2">
+                  <p className="font-bold text-green-700">
+                    Likes: <span className="font-medium text-foreground">{pet.likes.join(", ")}</span>
+                  </p>
+                  <p className="font-bold text-red-500 mt-1">
+                    Dislikes: <span className="font-medium text-foreground">{pet.dislikes.join(", ")}</span>
+                  </p>
+                </div>
               </div>
             ))}
           </div>

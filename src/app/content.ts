@@ -37,10 +37,38 @@ export const quickFacts: string[] = [
 // PETS
 // Put pet photos in: public/photos/
 // -----------------------------
-export const pets: { name: string; type: string; photo: string; traits: string[] }[] = [
-  { name: "Rigatoni", type: "Dog", photo: "/photos/Rigatoni.jpg", traits: ["Energetic", "Cuddly"] },
-  { name: "Sadie", type: "Dog", photo: "/photos/Sadie.jpg", traits: ["Fluffy", "Sweet"] },
-  { name: "Lavender", type: "Rabbit", photo: "/photos/Lavender.png", traits: ["Sweetheart", "Quick to zoomie"] },
+export const pets: {
+  name: string;
+  type: string;
+  photo: string;
+  traits: string[];
+  likes: string[];
+  dislikes: string[];
+}[] = [
+  {
+    name: "Rigatoni",
+    type: "Dog",
+    photo: "/photos/Rigatoni.jpg",
+    traits: ["Energetic", "Cuddly"],
+    likes: ["Swimming in the pool"],
+    dislikes: ["Lemons", "Carrots"],
+  },
+  {
+    name: "Sadie",
+    type: "Dog",
+    photo: "/photos/Sadie.jpg",
+    traits: ["Fluffy", "Sweet"],
+    likes: ["Cuddles"],
+    dislikes: ["Being bathed"],
+  },
+  {
+    name: "Lavender",
+    type: "Rabbit",
+    photo: "/photos/Lavender.png",
+    traits: ["Sweetheart", "Quick to zoomie"],
+    likes: ["Doing zoomies"],
+    dislikes: ["Cuddles (like me)"],
+  },
 ];
 
 // -----------------------------
