@@ -254,6 +254,14 @@ export const tidbitsFaq: { q: string; a: string }[] = [
     q: "What do you want people to know about talking to someone autistic?",
     a: "Just talk to me like a normal person. I'm funny, I love food, I have opinions on socks. Autism is part of me, not all of me.",
   },
+  {
+    q: "What are your sensory likes?",
+    a: "Funny animal videos, playing with my pets, and hanging with friends. Those are my happy place things.",
+  },
+  {
+    q: "What are your sensory dislikes?",
+    a: "Unpredictable loud sounds or noises, loud talking, and loud chewing. Those are the ones that get me every time.",
+  },
 ];
 
 // -----------------------------
