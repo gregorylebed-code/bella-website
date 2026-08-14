@@ -108,12 +108,14 @@ export const plateBuilder: { mains: string[]; sides: string[]; desserts: string[
     "Orange Chicken",
     "BBQ Ribs",
     "Fried Chicken Taco",
+    "Egg Tacos",
   ],
   sides: [
     "French Fries",
     "Loaded BBQ Tots",
     "Fried Rice",
     "Mac and Cheese",
+    "Stouffer's Mac and Cheese",
     "Crab Rangoon",
     "Pirate's Booty",
     "Garlic Bread",
@@ -125,6 +127,7 @@ export const plateBuilder: { mains: string[]; sides: string[]; desserts: string[
     "Milkshake",
     "A Slice of Pizza (for breakfast, obviously)",
     "Ice Cream Sundae",
+    "Teddy Grahams",
   ],
 };
 
