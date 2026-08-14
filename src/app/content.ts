@@ -230,6 +230,19 @@ I also have a massive fun sock collection! So many cool designs, foods, animals.
 export const tidbits: { title: string; date: string; text: string }[] = [];
 
 // -----------------------------
+// AUTISM SUPERPOWERS
+// Strengths and things that make your brain awesome. Short phrases,
+// shown as a highlight list.
+// -----------------------------
+export const autismSuperpowers: string[] = [
+  "Photographic memory for random facts",
+  "Strong sense for details",
+  "Can do voice impressions of Marge, Stewie, Homer, and Stitch",
+  "Handles new experiences like a champ, even the overwhelming ones",
+  "Deeply loyal and empathetic to family, friends, and pets",
+];
+
+// -----------------------------
 // TIDBITS FAQ
 // Common questions people ask, answered in your own words.
 // -----------------------------
@@ -299,7 +312,7 @@ export const videos: { id: string; title: string }[] = [
 export const sectionUpdates: Record<string, string> = {
   Pictures: "2026-07-11",
   Drawings: "2026-07-11",
-  Tidbits: "2026-07-11",
+  "Ausome Autism": "2026-08-14",
   Videos: "2026-07-11",
   Affirmations: "2026-07-11",
   Quiz: "2026-08-01",
