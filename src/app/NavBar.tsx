@@ -11,6 +11,7 @@ const links: [string, string][] = [
   ["Ausome Autism", "/tidbits"],
   ["Videos", "/videos"],
   ["Affirmations", "/affirmations"],
+  ["Build Bella's Plate", "/plate-builder"],
   ["Quiz", "/quiz"],
   ["Ask Bella", "/ask"],
 ];

@@ -94,6 +94,41 @@ export const bucketList: { food: string[]; life: string[]; travel: string[] } = 
 };
 
 // -----------------------------
+// BUILD BELLA'S PLATE
+// A silly random meal generator. Add as many options as you want to
+// each list, the page picks one from each at random.
+// -----------------------------
+export const plateBuilder: { mains: string[]; sides: string[]; desserts: string[] } = {
+  mains: [
+    "Chicken Nuggets",
+    "Fish Tacos",
+    "Cheeseburger",
+    "Wendy's Nuggets (party count size)",
+    "Pepperoni Pizza",
+    "Orange Chicken",
+    "BBQ Ribs",
+    "Fried Chicken Taco",
+  ],
+  sides: [
+    "French Fries",
+    "Loaded BBQ Tots",
+    "Fried Rice",
+    "Mac and Cheese",
+    "Crab Rangoon",
+    "Pirate's Booty",
+    "Garlic Bread",
+  ],
+  desserts: [
+    "Key Lime Pie Tart",
+    "Mango Gelato",
+    "Cookies",
+    "Milkshake",
+    "A Slice of Pizza (for breakfast, obviously)",
+    "Ice Cream Sundae",
+  ],
+};
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"
@@ -312,6 +347,7 @@ export const sectionUpdates: Record<string, string> = {
   Pictures: "2026-07-11",
   Drawings: "2026-07-11",
   "Ausome Autism": "2026-08-14",
+  "Build Bella's Plate": "2026-08-14",
   Videos: "2026-07-11",
   Affirmations: "2026-07-11",
   Quiz: "2026-08-01",
