@@ -34,6 +34,16 @@ export const quickFacts: string[] = [
 ];
 
 // -----------------------------
+// PETS
+// Put pet photos in: public/photos/
+// -----------------------------
+export const pets: { name: string; type: string; photo: string; traits: string[] }[] = [
+  { name: "Rigatoni", type: "Dog", photo: "", traits: ["Energetic", "Cuddly"] },
+  { name: "Sadie", type: "Dog", photo: "", traits: ["Fluffy", "Sweet"] },
+  { name: "Lavender", type: "Rabbit", photo: "", traits: ["Sweetheart", "Quick to zoomie"] },
+];
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"
@@ -250,4 +260,5 @@ export const sectionUpdates: Record<string, string> = {
   Affirmations: "2026-07-11",
   Quiz: "2026-08-01",
   "Ask Bella": "2026-08-08",
+  Pets: "2026-08-14",
 };

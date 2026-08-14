@@ -5,6 +5,7 @@ const links: [string, string][] = [
   ["About", "/about"],
   ["Pictures", "/pictures"],
   ["Drawings", "/drawings"],
+  ["Pets", "/pets"],
   ["Blog", "/blog"],
   ["Recipes", "/recipes"],
   ["Tidbits", "/tidbits"],
