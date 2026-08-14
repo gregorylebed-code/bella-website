@@ -38,9 +38,9 @@ export const quickFacts: string[] = [
 // Put pet photos in: public/photos/
 // -----------------------------
 export const pets: { name: string; type: string; photo: string; traits: string[] }[] = [
-  { name: "Rigatoni", type: "Dog", photo: "", traits: ["Energetic", "Cuddly"] },
-  { name: "Sadie", type: "Dog", photo: "", traits: ["Fluffy", "Sweet"] },
-  { name: "Lavender", type: "Rabbit", photo: "", traits: ["Sweetheart", "Quick to zoomie"] },
+  { name: "Rigatoni", type: "Dog", photo: "/photos/Rigatoni.jpg", traits: ["Energetic", "Cuddly"] },
+  { name: "Sadie", type: "Dog", photo: "/photos/Sadie.jpg", traits: ["Fluffy", "Sweet"] },
+  { name: "Lavender", type: "Rabbit", photo: "/photos/Lavender.png", traits: ["Sweetheart", "Quick to zoomie"] },
 ];
 
 // -----------------------------
