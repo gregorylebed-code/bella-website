@@ -272,19 +272,6 @@ export const affirmations: string[] = [
 ];
 
 // -----------------------------
-// RECIPES
-// Your favorite recipes. Put a photo in public/photos/ if you have one,
-// otherwise leave photo as an empty string "".
-// -----------------------------
-export const recipes: {
-  title: string;
-  photo: string;
-  description: string;
-  ingredients: string[];
-  steps: string[];
-}[] = [];
-
-// -----------------------------
 // YOUTUBE VIDEOS
 // Paste the video ID from the URL.
 // Example: https://www.youtube.com/watch?v=dQw4w9WgXcQ -> ID is "dQw4w9WgXcQ"
@@ -304,7 +291,6 @@ export const videos: { id: string; title: string }[] = [
 export const sectionUpdates: Record<string, string> = {
   Pictures: "2026-07-11",
   Drawings: "2026-07-11",
-  Recipes: "2026-08-01",
   Tidbits: "2026-07-11",
   Videos: "2026-07-11",
   Affirmations: "2026-07-11",
