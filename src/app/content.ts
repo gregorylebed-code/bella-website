@@ -85,6 +85,20 @@ export const drawings: { src: string; caption: string }[] = [
 // -----------------------------
 export const blogPosts: { title: string; date: string; text: string }[] = [
   {
+    title: "My First Two Shifts at Wendy's!",
+    date: "August 14, 2026",
+    text: `Hey all, I realized it's been a minute since I made a blog post. Last Saturday I had my first ever training shift at Wendy's. I did nuggets and french fries. I loved every second of it, even during my first lunch rush that was kinda overwhelming.
+
+Yesterday I had to make two party count nuggets, which are like 50 or so nuggets each. That was fun but also overstimulating.
+
+After work yesterday, dad and I DoorDashed dinner from a place called Coppola Pizza. The wings are to die for, the ultimate crisp and tenderness, and some great pizza with a crisp crust. I even had a slice for breakfast, which is a Bella novelty.
+
+Today at 1pm I have a BBQ with such awesome food items and awesome family and friends.
+
+As always, love and kindness sent your way!!
+♥️Bella`,
+  },
+  {
     title: "My Atlanta Trip Recap!",
     date: "August 1, 2026",
     text: `Wow! What an awesome trip to Atlanta. I'm kinda in a whirlwind of emotions, like happy to be in NJ, sad missing all the Georgia peaches, and excited as I just had my first day of work ever.
