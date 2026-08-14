@@ -15,14 +15,16 @@ const links: [string, string][] = [
   ["Ask Bella", "/ask"],
 ];
 
-const NEW_WINDOW_DAYS = 14;
-
 function isRecent(dateStr: string | undefined): boolean {
   if (!dateStr) return false;
   const updated = new Date(dateStr);
   if (Number.isNaN(updated.getTime())) return false;
-  const daysAgo = (Date.now() - updated.getTime()) / (1000 * 60 * 60 * 24);
-  return daysAgo >= 0 && daysAgo <= NEW_WINDOW_DAYS;
+  const today = new Date();
+  return (
+    updated.getFullYear() === today.getFullYear() &&
+    updated.getMonth() === today.getMonth() &&
+    updated.getDate() === today.getDate()
+  );
 }
 
 function isNew(label: string): boolean {
