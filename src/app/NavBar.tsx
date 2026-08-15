@@ -12,6 +12,7 @@ const links: [string, string][] = [
   ["Videos", "/videos"],
   ["Affirmations", "/affirmations"],
   ["Build Bella's Plate", "/plate-builder"],
+  ["Kindness Challenge", "/kindness-challenge"],
   ["Quiz", "/quiz"],
   ["Ask Bella", "/ask"],
 ];

@@ -132,6 +132,26 @@ export const plateBuilder: { mains: string[]; sides: string[]; desserts: string[
 };
 
 // -----------------------------
+// KINDNESS CHALLENGE
+// Small acts of kindness to spread love and joy. Add as many as you
+// want, the page picks one at random each time someone clicks the button.
+// -----------------------------
+export const kindnessChallenges: string[] = [
+  "Compliment a stranger today",
+  "Check in on a friend you haven't talked to in a while",
+  "Write a nice note for someone in your family",
+  "Let someone go ahead of you in line",
+  "Tell someone why you're grateful for them",
+  "Send an encouraging message to someone having a hard week",
+  "Help someone carry something heavy",
+  "Give someone your full attention when they're talking to you",
+  "Leave a kind comment for a creator you like",
+  "Smile at someone who looks like they're having a rough day",
+  "Say thank you to someone who doesn't hear it enough",
+  "Include someone who's sitting alone",
+];
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"
@@ -371,6 +391,7 @@ export const sectionUpdates: Record<string, string> = {
   Drawings: "2026-08-14",
   "Ausome Autism": "2026-08-14",
   "Build Bella's Plate": "2026-08-14",
+  "Kindness Challenge": "2026-08-15",
   Videos: "2026-07-11",
   Affirmations: "2026-07-11",
   Quiz: "2026-08-01",
