@@ -14,6 +14,7 @@ const links: [string, string][] = [
   ["Build Bella's Plate", "/plate-builder"],
   ["Kindness Challenge", "/kindness-challenge"],
   ["Guess That Fact", "/guess-that-fact"],
+  ["Show and Tell", "/show-and-tell"],
   ["Quiz", "/quiz"],
   ["Ask Bella", "/ask"],
 ];

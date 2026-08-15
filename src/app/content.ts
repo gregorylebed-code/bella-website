@@ -200,6 +200,35 @@ export const guessThatFacts: { fact: string; answer: boolean; explanation: strin
 ];
 
 // -----------------------------
+// SHOW AND TELL
+// What Bella's currently into right now. Update anytime her
+// favorites change. Photo is optional, leave as "" if you don't have one.
+// -----------------------------
+export const showAndTell: { category: string; emoji: string; title: string; blurb: string; photo: string }[] = [
+  {
+    category: "Favorite Show",
+    emoji: "📺",
+    title: "The Office",
+    blurb: "Rewatching it for the hundredth time and it's still funny every single time.",
+    photo: "",
+  },
+  {
+    category: "Favorite Food Right Now",
+    emoji: "🧀",
+    title: "Goodles Mac and Cheese",
+    blurb: "My current go-to, I could eat it every day and not get tired of it.",
+    photo: "",
+  },
+  {
+    category: "Current Hobby",
+    emoji: "🔍",
+    title: "Word Searches",
+    blurb: "Perfect for keeping my brain busy and my hands moving at the same time.",
+    photo: "",
+  },
+];
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"
@@ -441,6 +470,7 @@ export const sectionUpdates: Record<string, string> = {
   "Build Bella's Plate": "2026-08-14",
   "Kindness Challenge": "2026-08-15",
   "Guess That Fact": "2026-08-15",
+  "Show and Tell": "2026-08-15",
   Videos: "2026-07-11",
   Affirmations: "2026-07-11",
   Quiz: "2026-08-01",
