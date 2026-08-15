@@ -72,6 +72,44 @@ export const pets: {
 ];
 
 // -----------------------------
+// RELATIVES' PETS
+// The extended family's pets. Put photos in public/photos/.
+// -----------------------------
+export const relativesPets: {
+  name: string;
+  type: string;
+  photo: string;
+  traits: string[];
+  likes: string[];
+  dislikes: string[];
+}[] = [
+  {
+    name: "Ellie",
+    type: "Dog",
+    photo: "",
+    traits: [],
+    likes: ["Cuddles", "Tug-of-war"],
+    dislikes: [],
+  },
+  {
+    name: "Janine",
+    type: "Dog",
+    photo: "",
+    traits: [],
+    likes: ["Playing fetch (but won't give the ball back)"],
+    dislikes: ["Having her ears pet"],
+  },
+  {
+    name: "Penny",
+    type: "Dog",
+    photo: "",
+    traits: [],
+    likes: ["Sleeping in blankets"],
+    dislikes: ["New people"],
+  },
+];
+
+// -----------------------------
 // BUCKET LIST
 // Sorted into Food, Life, and Travel. Add as many as you want.
 // -----------------------------
