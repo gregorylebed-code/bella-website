@@ -152,6 +152,54 @@ export const kindnessChallenges: string[] = [
 ];
 
 // -----------------------------
+// GUESS THAT FACT
+// True or false facts about Bella. Mix in some false ones to keep it
+// tricky! The page shows one at random and reveals the answer on click.
+// -----------------------------
+export const guessThatFacts: { fact: string; answer: boolean; explanation: string }[] = [
+  {
+    fact: "I speak German.",
+    answer: true,
+    explanation: "True! I speak German and plan to learn even more languages.",
+  },
+  {
+    fact: "I have three dogs.",
+    answer: false,
+    explanation: "False, I have two dogs (Rigatoni and Sadie) and a rabbit (Lavender).",
+  },
+  {
+    fact: "I can do a voice impression of Peter Griffin.",
+    answer: false,
+    explanation: "False! My impressions are Marge, Stewie, Homer, and Stitch.",
+  },
+  {
+    fact: "I have a massive sock collection.",
+    answer: true,
+    explanation: "True! So many cool designs, foods, and animals.",
+  },
+  {
+    fact: "My dream job is to be a chef or a psychologist.",
+    answer: true,
+    explanation: "True! I hope to help kids and adolescents on the spectrum one day.",
+  },
+  {
+    fact: "I hate trying new foods.",
+    answer: false,
+    explanation: "False, food is my favorite four letter word! I love trying new things.",
+  },
+  {
+    fact: "I have a photographic memory for random facts.",
+    answer: true,
+    explanation: "True! Ask me about Pokemon silhouettes sometime.",
+  },
+  {
+    fact: "I'm a morning person.",
+    answer: false,
+    explanation: "False, definitely not a morning person, ask me about my 3:30am flight.",
+  },
+];
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"
@@ -392,6 +440,7 @@ export const sectionUpdates: Record<string, string> = {
   "Ausome Autism": "2026-08-14",
   "Build Bella's Plate": "2026-08-14",
   "Kindness Challenge": "2026-08-15",
+  "Guess That Fact": "2026-08-15",
   Videos: "2026-07-11",
   Affirmations: "2026-07-11",
   Quiz: "2026-08-01",
