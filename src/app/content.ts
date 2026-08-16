@@ -302,6 +302,11 @@ export const bellasAwards: { category: string; winner: string; emoji: string }[]
     winner: "Cousin Remi",
     emoji: "📣",
   },
+  {
+    category: "Best Sense of Style",
+    winner: "Mom",
+    emoji: "👗",
+  },
 ];
 
 // -----------------------------
