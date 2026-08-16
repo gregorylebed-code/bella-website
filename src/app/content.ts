@@ -322,6 +322,16 @@ export const bellasAwards: { category: string; winner: string; emoji: string }[]
     winner: "Uncle Charlie",
     emoji: "📖",
   },
+  {
+    category: "Best Gift Giver",
+    winner: "Aunt Diane",
+    emoji: "🎁",
+  },
+  {
+    category: "Most Likely to Take a Million Photos of Their Food",
+    winner: "Me :)",
+    emoji: "📸",
+  },
 ];
 
 // -----------------------------
