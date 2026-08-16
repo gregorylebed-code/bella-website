@@ -307,6 +307,21 @@ export const bellasAwards: { category: string; winner: string; emoji: string }[]
     winner: "Mom",
     emoji: "👗",
   },
+  {
+    category: "Most Likely to Start Singing Randomly",
+    winner: "Pop Pop Mel",
+    emoji: "🎤",
+  },
+  {
+    category: "Funniest Person in the Family",
+    winner: "Aunt Donna",
+    emoji: "😂",
+  },
+  {
+    category: "Best at Telling Stories",
+    winner: "Uncle Charlie",
+    emoji: "📖",
+  },
 ];
 
 // -----------------------------
