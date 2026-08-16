@@ -267,6 +267,34 @@ export const showAndTell: { category: string; emoji: string; title: string; blur
 ];
 
 // -----------------------------
+// BELLA'S AWARDS
+// A silly made-up awards show for people, pets, and foods in
+// Bella's life. Add as many categories as you want.
+// -----------------------------
+export const bellasAwards: { category: string; winner: string; emoji: string }[] = [
+  {
+    category: "Most Likely to Steal My Food While I'm in the Bathroom",
+    winner: "Rigatoni",
+    emoji: "🏆",
+  },
+  {
+    category: "Most Adventurous Eater",
+    winner: "Me :)",
+    emoji: "🍽️",
+  },
+  {
+    category: "Most Likely to Get a Cool Tattoo",
+    winner: "Aunt Jill",
+    emoji: "🎨",
+  },
+  {
+    category: "Most Snackable Snack",
+    winner: "Cheerios & Pirate's Booty (Pikachu Variety)",
+    emoji: "🥇",
+  },
+];
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"
@@ -509,6 +537,7 @@ export const sectionUpdates: Record<string, string> = {
   "Kindness Challenge": "2026-08-15",
   "Guess That Fact": "2026-08-15",
   "Show and Tell": "2026-08-15",
+  "Bella's Awards": "2026-08-16",
   Videos: "2026-07-11",
   Affirmations: "2026-07-11",
   Quiz: "2026-08-01",
