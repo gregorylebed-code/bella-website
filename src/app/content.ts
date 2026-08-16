@@ -332,6 +332,16 @@ export const bellasAwards: { category: string; winner: string; emoji: string }[]
     winner: "Me :)",
     emoji: "📸",
   },
+  {
+    category: "Best Nap Taker",
+    winner: "Uncle Gary",
+    emoji: "😴",
+  },
+  {
+    category: "Best at Making You Laugh When You're Upset",
+    winner: "My Pets",
+    emoji: "🐾",
+  },
 ];
 
 // -----------------------------
