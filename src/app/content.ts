@@ -292,6 +292,16 @@ export const bellasAwards: { category: string; winner: string; emoji: string }[]
     winner: "Cheerios & Pirate's Booty (Pikachu Variety)",
     emoji: "🥇",
   },
+  {
+    category: "Most Likely to Talk to Animals Like They're People",
+    winner: "Dad",
+    emoji: "🐾",
+  },
+  {
+    category: "Best Hype Person / Most Encouraging",
+    winner: "Cousin Remi",
+    emoji: "📣",
+  },
 ];
 
 // -----------------------------
