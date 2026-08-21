@@ -352,6 +352,11 @@ export const bellasAwards: { category: string; winner: string; emoji: string }[]
     winner: "Me :)",
     emoji: "🍔",
   },
+  {
+    category: "Best Karaoke Voice",
+    winner: "Mom Mom Judy",
+    emoji: "🎤",
+  },
 ];
 
 // -----------------------------
