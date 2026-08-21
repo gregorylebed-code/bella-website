@@ -357,6 +357,16 @@ export const bellasAwards: { category: string; winner: string; emoji: string }[]
     winner: "Mom Mom Judy",
     emoji: "🎤",
   },
+  {
+    category: "Coolest Aunt or Uncle",
+    winner: "Uncle Brian & Uncle Jerry",
+    emoji: "😎",
+  },
+  {
+    category: "Sweetest Text Sender",
+    winner: "Grandma Carole",
+    emoji: "💌",
+  },
 ];
 
 // -----------------------------
