@@ -342,6 +342,16 @@ export const bellasAwards: { category: string; winner: string; emoji: string }[]
     winner: "My Pets",
     emoji: "🐾",
   },
+  {
+    category: "Loudest Sneezer",
+    winner: "Pop Pop Mel",
+    emoji: "🤧",
+  },
+  {
+    category: "Most Likely to Talk About Food for an Hour Straight",
+    winner: "Me :)",
+    emoji: "🍔",
+  },
 ];
 
 // -----------------------------
