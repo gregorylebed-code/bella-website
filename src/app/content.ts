@@ -372,6 +372,11 @@ export const bellasAwards: { category: string; winner: string; emoji: string }[]
     winner: "Step Dad Rob",
     emoji: "👨‍🍳",
   },
+  {
+    category: "Best Baker in the Family",
+    winner: "Aunt Steph",
+    emoji: "🧁",
+  },
 ];
 
 // -----------------------------
