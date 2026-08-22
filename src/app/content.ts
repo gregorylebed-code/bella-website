@@ -629,6 +629,8 @@ First stop obviously was food. We got Manco & Manco Pizza and honestly it did no
 
 Bonus round today: we got to see Uncle Gary, Uncle Charlie G, Aunt Jill, and the pups Ellie, Penny, and Janine! Lots of kisses with more kisses from Janine, no time to chit chat, she just wanted kisses, and Penny was very much in her "new people" era, which is fair, I get it.
 
+Dad and I also took a walk on the boardwalk tonight, which is always one of my favorite parts of Ocean City.
+
 More beach updates to come. Sending yall love and kindness from the shore!
 ♥️Bella`,
   },
