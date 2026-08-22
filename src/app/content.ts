@@ -576,39 +576,39 @@ export const drawingPrompts: string[] = [
 // -----------------------------
 export const ingredients: { name: string; emoji: string; note: string; photo: string }[] = [
   {
-    name: "Ranch",
-    emoji: "🥫",
-    note: "Goes on basically everything, don't ask questions.",
+    name: "Spicy Mustard",
+    emoji: "🌭",
+    note: "Gives everything a little kick, no regular mustard for me.",
     photo: "",
   },
   {
-    name: "Parmesan Cheese",
+    name: "Pickles",
+    emoji: "🥒",
+    note: "Non-negotiable on a burger, extra points if they're the good crunchy ones.",
+    photo: "",
+  },
+  {
+    name: "All Types of Cheese",
     emoji: "🧀",
-    note: "If it's pasta, it needs a mountain of this on top.",
+    note: "Doesn't matter what kind, if it's cheese I'm in.",
     photo: "",
   },
   {
-    name: "Garlic",
-    emoji: "🧄",
-    note: "The real MVP of any good recipe, more is always better.",
-    photo: "",
-  },
-  {
-    name: "Butter",
-    emoji: "🧈",
-    note: "Makes everything better, that's just science.",
-    photo: "",
-  },
-  {
-    name: "Marinara (Mano Mano)",
+    name: "Salsa",
     emoji: "🍅",
-    note: "Dip it, top it, eat it with a spoon, no judgment.",
+    note: "Chips need a partner and salsa's always showing up.",
     photo: "",
   },
   {
-    name: "Hot Honey",
-    emoji: "🍯",
-    note: "Sweet and spicy on literally anything fried.",
+    name: "Queso",
+    emoji: "🫕",
+    note: "Warm, melty, and honestly could be its own meal.",
+    photo: "",
+  },
+  {
+    name: "Guacamole",
+    emoji: "🥑",
+    note: "The best part of any chip and dip situation.",
     photo: "",
   },
 ];
