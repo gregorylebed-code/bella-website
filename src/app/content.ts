@@ -443,6 +443,30 @@ export const bellaScale: { item: string; rainbows: number; note: string }[] = [
 ];
 
 // -----------------------------
+// THE BELLA TRANSLATOR
+// Words and phrases from Bella's own vocabulary, and what they
+// actually mean. Add as many as you want.
+// -----------------------------
+export const bellaTranslator: { word: string; meaning: string }[] = [
+  {
+    word: "Wuder",
+    meaning: "Water (that's just how we say it in Jersey)",
+  },
+  {
+    word: "Mano Mano",
+    meaning: "Marinara",
+  },
+  {
+    word: "Moosh",
+    meaning: "Rigatoni's squishy face",
+  },
+  {
+    word: "Be serious about the chuckles",
+    meaning: "An inside joke between me and my dad",
+  },
+];
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"
@@ -688,6 +712,7 @@ export const sectionUpdates: Record<string, string> = {
   "Bella's Awards": "2026-08-16",
   "Bella's Rulebook": "2026-08-16",
   "The Bella Scale": "2026-08-16",
+  "The Bella Translator": "2026-08-16",
   Videos: "2026-07-11",
   Affirmations: "2026-07-11",
   Quiz: "2026-08-01",
