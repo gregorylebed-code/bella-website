@@ -86,6 +86,7 @@ export const relativesPets: {
   traits: string[];
   likes: string[];
   dislikes: string[];
+  quote: string;
 }[] = [
   {
     name: "Ellie",
@@ -94,6 +95,7 @@ export const relativesPets: {
     traits: [],
     likes: ["Cuddles", "Tug-of-war"],
     dislikes: [],
+    quote: "I'm coming over to love you.",
   },
   {
     name: "Janine",
@@ -102,6 +104,7 @@ export const relativesPets: {
     traits: [],
     likes: ["Playing fetch (but won't give the ball back)"],
     dislikes: ["Having her ears pet"],
+    quote: "Kisses with more kisses, no time to chit chat, I just want kisses.",
   },
   {
     name: "Penny",
@@ -110,6 +113,7 @@ export const relativesPets: {
     traits: [],
     likes: ["Sleeping in blankets"],
     dislikes: ["New people"],
+    quote: "Belly rubs please!",
   },
 ];
 
