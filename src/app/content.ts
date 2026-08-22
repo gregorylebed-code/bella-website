@@ -380,6 +380,17 @@ export const bellasAwards: { category: string; winner: string; emoji: string }[]
 ];
 
 // -----------------------------
+// BELLA'S RULEBOOK
+// Life rules Bella lives by, in her own words. Add as many as you want.
+// -----------------------------
+export const bellasRulebook: string[] = [
+  "Don't eat until you're stuffed like a teddy bear",
+  "Everyone leaves happy",
+  "Give my fur babies belly rubs",
+  "Always try my new recipes",
+];
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"
@@ -623,6 +634,7 @@ export const sectionUpdates: Record<string, string> = {
   "Guess That Fact": "2026-08-15",
   "Show and Tell": "2026-08-15",
   "Bella's Awards": "2026-08-16",
+  "Bella's Rulebook": "2026-08-16",
   Videos: "2026-07-11",
   Affirmations: "2026-07-11",
   Quiz: "2026-08-01",
