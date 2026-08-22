@@ -44,6 +44,7 @@ export const pets: {
   traits: string[];
   likes: string[];
   dislikes: string[];
+  quote: string;
 }[] = [
   {
     name: "Rigatoni",
@@ -52,6 +53,7 @@ export const pets: {
     traits: ["Energetic", "Cuddly"],
     likes: ["Swimming in the pool"],
     dislikes: ["Lemons", "Carrots"],
+    quote: "I see a squirrel, and I'm going to go lightning speed.",
   },
   {
     name: "Sadie",
@@ -60,6 +62,7 @@ export const pets: {
     traits: ["Fluffy", "Sweet"],
     likes: ["Cuddles"],
     dislikes: ["Being bathed"],
+    quote: "Just let me sleep, and pet me.",
   },
   {
     name: "Lavender",
@@ -68,6 +71,7 @@ export const pets: {
     traits: ["Sweetheart", "Quick to zoomie"],
     likes: ["Doing zoomies"],
     dislikes: ["Cuddles (like me)"],
+    quote: "I love my mommy and daddy!",
   },
 ];
 

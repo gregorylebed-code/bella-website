@@ -5,6 +5,7 @@ type Pet = {
   traits: string[];
   likes: string[];
   dislikes: string[];
+  quote?: string;
 };
 
 export default function PetCard({ pet }: { pet: Pet }) {
@@ -23,6 +24,9 @@ export default function PetCard({ pet }: { pet: Pet }) {
       )}
       <h3 className="heading-font text-xl font-bold">{pet.name}</h3>
       <p className="text-sm text-foreground/60 font-medium">{pet.type}</p>
+      {pet.quote && (
+        <p className="italic text-sm text-foreground/80">"{pet.quote}"</p>
+      )}
       {pet.traits.length > 0 && (
         <div className="flex flex-wrap justify-center gap-2">
           {pet.traits.map((trait) => (
