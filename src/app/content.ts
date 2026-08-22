@@ -571,6 +571,49 @@ export const drawingPrompts: string[] = [
 ];
 
 // -----------------------------
+// INGREDIENTS I CAN'T LIVE WITHOUT
+// Bella's go-to pantry staples and condiments. Emoji shows if no photo.
+// -----------------------------
+export const ingredients: { name: string; emoji: string; note: string; photo: string }[] = [
+  {
+    name: "Ranch",
+    emoji: "🥫",
+    note: "Goes on basically everything, don't ask questions.",
+    photo: "",
+  },
+  {
+    name: "Parmesan Cheese",
+    emoji: "🧀",
+    note: "If it's pasta, it needs a mountain of this on top.",
+    photo: "",
+  },
+  {
+    name: "Garlic",
+    emoji: "🧄",
+    note: "The real MVP of any good recipe, more is always better.",
+    photo: "",
+  },
+  {
+    name: "Butter",
+    emoji: "🧈",
+    note: "Makes everything better, that's just science.",
+    photo: "",
+  },
+  {
+    name: "Marinara (Mano Mano)",
+    emoji: "🍅",
+    note: "Dip it, top it, eat it with a spoon, no judgment.",
+    photo: "",
+  },
+  {
+    name: "Hot Honey",
+    emoji: "🍯",
+    note: "Sweet and spicy on literally anything fried.",
+    photo: "",
+  },
+];
+
+// -----------------------------
 // BLOG
 // Write about anything: your day, something you're excited about,
 // whatever you want. Newest posts should go at the TOP of the list.
@@ -771,4 +814,5 @@ export const sectionUpdates: Record<string, string> = {
   "Ask Bella": "2026-08-08",
   Pets: "2026-08-14",
   "Bucket List": "2026-08-14",
+  Ingredients: "2026-08-22",
 };
