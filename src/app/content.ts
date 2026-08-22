@@ -492,6 +492,10 @@ export const bellaTranslator: { word: string; meaning: string }[] = [
     word: "Bones",
     meaning: "Pizza crust",
   },
+  {
+    word: "Sugar I'm Steve",
+    meaning: `What I hear instead of "Sugar, you're sweet" in the song "Sugar" by Maroon 5`,
+  },
 ];
 
 // -----------------------------
