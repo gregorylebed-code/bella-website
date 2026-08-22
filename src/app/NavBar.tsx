@@ -17,6 +17,7 @@ const links: [string, string][] = [
   ["Show and Tell", "/show-and-tell"],
   ["Bella's Awards", "/bellas-awards"],
   ["Bella's Rulebook", "/bellas-rulebook"],
+  ["The Bella Scale", "/bella-scale"],
   ["Quiz", "/quiz"],
   ["Ask Bella", "/ask"],
 ];

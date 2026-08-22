@@ -395,6 +395,54 @@ export const bellasRulebook: string[] = [
 ];
 
 // -----------------------------
+// THE BELLA SCALE
+// Bella's own rating system, out of 10 rainbows. Add a new rating
+// anytime you try something worth reviewing.
+// -----------------------------
+export const bellaScale: { item: string; rainbows: number; note: string }[] = [
+  {
+    item: "Coppola Pizza Wings",
+    rainbows: 10,
+    note: "The ultimate crisp and tenderness, to die for.",
+  },
+  {
+    item: "Coppola Pizza (the pizza itself)",
+    rainbows: 9,
+    note: "Great crisp crust, good enough for breakfast the next day.",
+  },
+  {
+    item: "Wendy's Nuggets",
+    rainbows: 9,
+    note: "Loved making them from my first shift, even the party count ones.",
+  },
+  {
+    item: "Goodles Mac and Cheese",
+    rainbows: 9,
+    note: "My current go-to, could eat it every day.",
+  },
+  {
+    item: "Max's Lager House Cheeseburger",
+    rainbows: 9,
+    note: "Some of the best pickles ever, fries tasted like Five Guys.",
+  },
+  {
+    item: "Tin Lizzy's Cantina Tacos",
+    rainbows: 9,
+    note: "Fried fish, fried chicken, and cheeseburger tacos, all very very good.",
+  },
+  {
+    item: "Scoops @ Peachtree Mango Gelato",
+    rainbows: 8,
+    note: "Delicious, perfect for a hot and humid day.",
+  },
+  {
+    item: "Go Dawgs BBQ Loaded Tots",
+    rainbows: 8,
+    note: "Spectacular, though I was hoping for ribs and mac and cheese too.",
+  },
+];
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"
@@ -639,6 +687,7 @@ export const sectionUpdates: Record<string, string> = {
   "Show and Tell": "2026-08-15",
   "Bella's Awards": "2026-08-16",
   "Bella's Rulebook": "2026-08-16",
+  "The Bella Scale": "2026-08-16",
   Videos: "2026-07-11",
   Affirmations: "2026-07-11",
   Quiz: "2026-08-01",
