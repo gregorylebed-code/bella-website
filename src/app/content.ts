@@ -464,6 +464,26 @@ export const bellaTranslator: { word: string; meaning: string }[] = [
     word: "Be serious about the chuckles",
     meaning: "An inside joke between me and my dad",
   },
+  {
+    word: "Spotty Chubs",
+    meaning: "Lavender's nickname",
+  },
+  {
+    word: "Boom Booms",
+    meaning: "Thunder",
+  },
+  {
+    word: "Codeworkers",
+    meaning: "What I used to call coworkers",
+  },
+  {
+    word: "Zippy",
+    meaning: "One of my many childhood nicknames",
+  },
+  {
+    word: "Inchers",
+    meaning: "Inches",
+  },
 ];
 
 // -----------------------------
