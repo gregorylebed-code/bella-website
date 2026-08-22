@@ -484,6 +484,10 @@ export const bellaTranslator: { word: string; meaning: string }[] = [
     word: "Inchers",
     meaning: "Inches",
   },
+  {
+    word: "Brain Go Up, Brain Go Down",
+    meaning: "When someone's eyebrows go up or down",
+  },
 ];
 
 // -----------------------------
