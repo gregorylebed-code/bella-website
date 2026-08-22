@@ -578,6 +578,18 @@ export const drawingPrompts: string[] = [
 // -----------------------------
 export const blogPosts: { title: string; date: string; text: string }[] = [
   {
+    title: "Ocean City, Day 1!",
+    date: "August 22, 2026",
+    text: `Hi peeps! We made it to Ocean City! We got here around 3pm and our house is literally on the beach this year, and it's a very big home, so I'm already feeling fancy.
+
+First stop obviously was food. We got Manco & Manco Pizza and honestly it did not disappoint, that thin crispy crust is elite. 10/10 start to the trip if you ask me.
+
+Bonus round today: we got to see Uncle Gary, Uncle Charlie G, Aunt Jill, and the pups Ellie, Penny, and Janine! Lots of kisses with more kisses from Janine, no time to chit chat, she just wanted kisses, and Penny was very much in her "new people" era, which is fair, I get it.
+
+More beach updates to come. Sending yall love and kindness from the shore!
+♥️Bella`,
+  },
+  {
     title: "My First Two Shifts at Wendy's!",
     date: "August 9, 2026",
     text: `Hey all, I realized it's been a minute since I made a blog post. Last Saturday I had my first ever training shift at Wendy's. I did nuggets and french fries. I loved every second of it, even during my first lunch rush that was kinda overwhelming.
