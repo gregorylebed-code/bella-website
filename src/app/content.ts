@@ -388,6 +388,10 @@ export const bellasRulebook: string[] = [
   "Everyone leaves happy",
   "Give my fur babies belly rubs",
   "Always try my new recipes",
+  "Pets get the first hello when you walk in",
+  "Say yes to trying something new at least once",
+  "Always leave room for dessert",
+  "Kindness first, always",
 ];
 
 // -----------------------------
