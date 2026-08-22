@@ -488,6 +488,10 @@ export const bellaTranslator: { word: string; meaning: string }[] = [
     word: "Brain Go Up, Brain Go Down",
     meaning: "When someone's eyebrows go up or down",
   },
+  {
+    word: "Bones",
+    meaning: "Pizza crust",
+  },
 ];
 
 // -----------------------------
