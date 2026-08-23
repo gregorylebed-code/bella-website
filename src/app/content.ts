@@ -660,6 +660,8 @@ I did some seashell hunting too, but sadly every single one I found was broken. 
 
 For dinner we went to Sack O' Subs and I got an Italian hoagie, giving it a solid 8.5/10. The dogs were begging the whole time through the see-through table, it was honestly very funny.
 
+We also did crosswords together as a family tonight. I've got a jumbo one with 800 clues, so that should keep us busy for a while.
+
 More updates soon, sending yall love from the beach!
 ♥️Bella`,
   },
