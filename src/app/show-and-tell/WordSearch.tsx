@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { unlockBadge } from "../badges";
 
 const THEMES: { name: string; emoji: string; words: string[] }[] = [
   {
@@ -170,6 +171,10 @@ export default function WordSearch() {
   }
 
   const allFound = foundWords.size === placed.length;
+
+  useEffect(() => {
+    if (allFound) unlockBadge("word-search");
+  }, [allFound]);
 
   return (
     <div className="card p-6 mb-8">

@@ -16,6 +16,7 @@ const links: [string, string][] = [
   ["Guess That Fact", "/guess-that-fact"],
   ["Show and Tell", "/show-and-tell"],
   ["Ingredients", "/ingredients"],
+  ["Your Achievements", "/badges"],
   ["Bella's Awards", "/bellas-awards"],
   ["Bella's Rulebook", "/bellas-rulebook"],
   ["The Bella Scale", "/bella-scale"],

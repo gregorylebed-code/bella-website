@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { unlockBadge } from "../badges";
 
 type Pet = {
   name: string;
@@ -83,6 +84,10 @@ export default function MatchThePet({ pets }: { pets: Pet[] }) {
   }
 
   const allMatched = matched.size === deck.length;
+
+  useEffect(() => {
+    if (allMatched) unlockBadge("match-the-pet");
+  }, [allMatched]);
 
   return (
     <div className="card p-6 mt-10" key={gameKey}>

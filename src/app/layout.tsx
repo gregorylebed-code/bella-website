@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Baloo_2, Quicksand } from "next/font/google";
 import "./globals.css";
 import { siteName, tagline } from "./content";
+import VisitorBadgeUnlocker from "./VisitorBadgeUnlocker";
 
 const baloo = Baloo_2({
   variable: "--font-baloo",
@@ -30,7 +31,10 @@ export default function RootLayout({
       lang="en"
       className={`${baloo.variable} ${quicksand.variable} antialiased`}
     >
-      <body className="flex flex-col">{children}</body>
+      <body className="flex flex-col">
+        <VisitorBadgeUnlocker />
+        {children}
+      </body>
     </html>
   );
 }

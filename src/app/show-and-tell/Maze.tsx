@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { unlockBadge } from "../badges";
 
 // 0 = open path, 1 = wall
 const MAZE: number[][] = [
@@ -54,6 +55,10 @@ export default function Maze() {
     setPos(START);
     setWon(false);
   }
+
+  useEffect(() => {
+    if (won) unlockBadge("maze");
+  }, [won]);
 
   return (
     <div className="card p-6 mb-8">
