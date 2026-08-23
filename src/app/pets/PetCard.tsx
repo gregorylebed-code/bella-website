@@ -6,7 +6,31 @@ type Pet = {
   likes: string[];
   dislikes: string[];
   quote?: string;
+  zoomies?: number;
+  cuddliness?: number;
+  foodMotivation?: number;
 };
+
+const rainbowGradient =
+  "linear-gradient(90deg, #ff5c5c, #ff9f43, #ffd93d, #6bcB77, #4d96ff, #9b5de5)";
+
+function StatBar({ label, value }: { label: string; value: number }) {
+  const percent = Math.max(0, Math.min(100, (value / 10) * 100));
+  return (
+    <div className="w-full text-left">
+      <div className="flex justify-between text-xs font-bold text-foreground/70 mb-1">
+        <span>{label}</span>
+        <span>{value}/10</span>
+      </div>
+      <div className="w-full h-2.5 rounded-full bg-white/70 shadow-inner overflow-hidden">
+        <div
+          className="h-full rounded-full"
+          style={{ width: `${percent}%`, background: rainbowGradient }}
+        />
+      </div>
+    </div>
+  );
+}
 
 export default function PetCard({ pet }: { pet: Pet }) {
   return (
@@ -37,6 +61,19 @@ export default function PetCard({ pet }: { pet: Pet }) {
               {trait}
             </span>
           ))}
+        </div>
+      )}
+      {(pet.zoomies !== undefined ||
+        pet.cuddliness !== undefined ||
+        pet.foodMotivation !== undefined) && (
+        <div className="w-full flex flex-col gap-2 mt-1">
+          {pet.zoomies !== undefined && <StatBar label="Zoomies Meter" value={pet.zoomies} />}
+          {pet.cuddliness !== undefined && (
+            <StatBar label="Cuddliness" value={pet.cuddliness} />
+          )}
+          {pet.foodMotivation !== undefined && (
+            <StatBar label="Food Motivation" value={pet.foodMotivation} />
+          )}
         </div>
       )}
       <div className="w-full text-left text-sm mt-2">

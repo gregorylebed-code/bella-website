@@ -47,6 +47,9 @@ export const pets: {
   likes: string[];
   dislikes: string[];
   quote: string;
+  zoomies: number;
+  cuddliness: number;
+  foodMotivation: number;
 }[] = [
   {
     name: "Rigatoni",
@@ -56,6 +59,9 @@ export const pets: {
     likes: ["Swimming in the pool"],
     dislikes: ["Lemons", "Carrots"],
     quote: "I see a squirrel, and I'm going to go lightning speed.",
+    zoomies: 10,
+    cuddliness: 7,
+    foodMotivation: 8,
   },
   {
     name: "Sadie",
@@ -65,6 +71,9 @@ export const pets: {
     likes: ["Cuddles"],
     dislikes: ["Being bathed"],
     quote: "Just let me sleep, and pet me.",
+    zoomies: 3,
+    cuddliness: 10,
+    foodMotivation: 6,
   },
   {
     name: "Lavender",
@@ -74,6 +83,9 @@ export const pets: {
     likes: ["Doing zoomies"],
     dislikes: ["Cuddles (like me)"],
     quote: "I love my mommy and daddy!",
+    zoomies: 9,
+    cuddliness: 2,
+    foodMotivation: 9,
   },
 ];
 
