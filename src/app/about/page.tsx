@@ -1,7 +1,6 @@
 import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import { aboutPhoto, aboutIntro, quickFacts } from "../content";
-import BuildABella from "./BuildABella";
 
 export default function AboutPage() {
   return (
@@ -41,8 +40,6 @@ export default function AboutPage() {
             </div>
           </div>
         )}
-
-        <BuildABella />
       </section>
 
       <footer className="relative z-10 text-center py-8 text-blue-600 font-medium">
