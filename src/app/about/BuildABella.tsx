@@ -51,21 +51,80 @@ export default function BuildABella() {
 
       <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
         <div
-          className="w-56 h-56 rounded-2xl shadow-md flex items-end justify-center overflow-hidden shrink-0"
+          className="w-56 h-64 rounded-2xl shadow-md flex items-end justify-center overflow-hidden shrink-0"
           style={{ background: bg.value }}
         >
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <circle cx="50" cy="35" r="18" fill="#f2c9a0" />
+          <svg viewBox="0 0 100 120" className="w-full h-full">
+            {/* back hair, behind the head/shoulders */}
             <path
-              d={`M32 30 Q50 8 68 30 Q68 20 50 18 Q32 20 32 30 Z`}
+              d="M28 38 Q26 68 32 92 Q34 78 36 60 L36 38 Z"
               fill={hair}
             />
-            <rect x="32" y="50" width="36" height="30" rx="8" fill={outfit} />
-            <rect x="36" y="80" width="10" height="16" fill={socks.colors[0]} />
-            <rect x="54" y="80" width="10" height="16" fill={socks.colors[socks.colors.length > 1 ? 1 : 0]} />
-            <circle cx="43" cy="34" r="2" fill="#333" />
-            <circle cx="57" cy="34" r="2" fill="#333" />
-            <path d="M43 42 Q50 47 57 42" stroke="#333" strokeWidth="2" fill="none" strokeLinecap="round" />
+            <path
+              d="M72 38 Q74 68 68 92 Q66 78 64 60 L64 38 Z"
+              fill={hair}
+            />
+
+            {/* shoulders / body */}
+            <path
+              d="M22 112 Q22 82 50 80 Q78 82 78 112 Z"
+              fill={outfit}
+            />
+            <path
+              d="M40 82 Q50 90 60 82 L58 78 Q50 84 42 78 Z"
+              fill="#ffffff"
+              opacity="0.35"
+            />
+
+            {/* socks peeking at the bottom */}
+            <rect x="34" y="108" width="11" height="12" rx="2" fill={socks.colors[0]} />
+            <rect x="55" y="108" width="11" height="12" rx="2" fill={socks.colors[socks.colors.length > 1 ? 1 : 0]} />
+
+            {/* neck */}
+            <rect x="44" y="58" width="12" height="14" rx="4" fill="#f2c9a0" />
+
+            {/* head */}
+            <ellipse cx="50" cy="42" rx="20" ry="22" fill="#f2c9a0" />
+
+            {/* ears */}
+            <circle cx="30" cy="43" r="4" fill="#f2c9a0" />
+            <circle cx="70" cy="43" r="4" fill="#f2c9a0" />
+
+            {/* front hair with side part and soft strands */}
+            <path
+              d="M28 40 Q26 18 50 14 Q74 18 72 40 Q68 26 50 24 Q32 26 28 40 Z"
+              fill={hair}
+            />
+            <path
+              d="M30 32 Q34 22 44 18 Q36 24 34 34 Z"
+              fill={hair}
+              opacity="0.85"
+            />
+            <path
+              d="M70 32 Q66 22 56 18 Q64 24 66 34 Z"
+              fill={hair}
+              opacity="0.85"
+            />
+
+            {/* rosy cheeks */}
+            <ellipse cx="37" cy="48" rx="4" ry="2.5" fill="#ffb3ab" opacity="0.5" />
+            <ellipse cx="63" cy="48" rx="4" ry="2.5" fill="#ffb3ab" opacity="0.5" />
+
+            {/* eyes */}
+            <ellipse cx="42" cy="42" rx="2.2" ry="2.8" fill="#3a2a20" />
+            <ellipse cx="58" cy="42" rx="2.2" ry="2.8" fill="#3a2a20" />
+            <circle cx="42.8" cy="41" r="0.6" fill="#fff" />
+            <circle cx="58.8" cy="41" r="0.6" fill="#fff" />
+
+            {/* eyebrows */}
+            <path d="M38 37 Q42 35 46 37" stroke="#3a2a20" strokeWidth="1.3" fill="none" strokeLinecap="round" />
+            <path d="M54 37 Q58 35 62 37" stroke="#3a2a20" strokeWidth="1.3" fill="none" strokeLinecap="round" />
+
+            {/* nose */}
+            <path d="M49 45 Q48 48 50 49" stroke="#d99a76" strokeWidth="1" fill="none" strokeLinecap="round" />
+
+            {/* smile */}
+            <path d="M43 52 Q50 58 57 52" stroke="#c9605a" strokeWidth="1.8" fill="none" strokeLinecap="round" />
           </svg>
         </div>
 
