@@ -15,6 +15,8 @@ export const tagline = "Welcome to my corner of the internet!";
 // -----------------------------
 export const youtubeChannelUrl = "https://www.youtube.com/@BellasBistro";
 export const youtubeChannelName = "Bella's Bistro";
+export const subscriberCount = 220;
+export const subscriberGoal = 1000;
 
 // -----------------------------
 // ABOUT ME
