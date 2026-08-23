@@ -33,18 +33,25 @@ export const BADGES: Badge[] = [
 ];
 
 const STORAGE_KEY = "bella-unlocked-badges";
+export const BADGE_UNLOCKED_EVENT = "bella-badge-unlocked";
 
-export function unlockBadge(id: string) {
-  if (typeof window === "undefined") return;
+export function unlockBadge(id: string): boolean {
+  if (typeof window === "undefined") return false;
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
     const unlocked: string[] = raw ? JSON.parse(raw) : [];
     if (!unlocked.includes(id)) {
       unlocked.push(id);
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(unlocked));
+      const badge = BADGES.find((b) => b.id === id);
+      window.dispatchEvent(
+        new CustomEvent(BADGE_UNLOCKED_EVENT, { detail: { id, badge } })
+      );
+      return true;
     }
+    return false;
   } catch {
-    // ignore storage errors (private browsing, etc.)
+    return false;
   }
 }
 

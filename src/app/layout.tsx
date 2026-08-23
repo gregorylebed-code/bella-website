@@ -3,6 +3,7 @@ import { Baloo_2, Quicksand } from "next/font/google";
 import "./globals.css";
 import { siteName, tagline } from "./content";
 import VisitorBadgeUnlocker from "./VisitorBadgeUnlocker";
+import BadgeCelebration from "./BadgeCelebration";
 
 const baloo = Baloo_2({
   variable: "--font-baloo",
@@ -33,6 +34,7 @@ export default function RootLayout({
     >
       <body className="flex flex-col">
         <VisitorBadgeUnlocker />
+        <BadgeCelebration />
         {children}
       </body>
     </html>
