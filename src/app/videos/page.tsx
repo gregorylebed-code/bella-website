@@ -2,6 +2,7 @@ import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
 import YouTubeFacade from "../YouTubeFacade";
+import NextVideoCountdown from "./NextVideoCountdown";
 import { videos } from "../content";
 
 export default function VideosPage() {
@@ -16,6 +17,7 @@ export default function VideosPage() {
         <h2 className="heading-font text-3xl font-bold text-black drop-shadow mb-6 text-center">
           Videos
         </h2>
+        <NextVideoCountdown />
         {videos.length === 0 ? (
           <EmptyState text="No videos yet, check back soon!" />
         ) : (
