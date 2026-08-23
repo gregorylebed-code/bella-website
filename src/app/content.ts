@@ -795,6 +795,18 @@ export const autismSuperpowers: string[] = [
 ];
 
 // -----------------------------
+// MY FAVORITE SMELLS
+// Sensory-positive list, balances the sensory dislikes in the FAQ below.
+// -----------------------------
+export const favoriteSmells: { emoji: string; smell: string }[] = [
+  { emoji: "🥒", smell: "Pickles" },
+  { emoji: "🍪", smell: "Cookies" },
+  { emoji: "🌭", smell: "Mustard" },
+  { emoji: "🍫", smell: "Brownies" },
+  { emoji: "🍰", smell: "Pretty much any sweets" },
+];
+
+// -----------------------------
 // TIDBITS FAQ
 // Common questions people ask, answered in your own words.
 // -----------------------------

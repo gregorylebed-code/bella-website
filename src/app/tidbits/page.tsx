@@ -1,7 +1,7 @@
 import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
-import { tidbits, tidbitsFaq, autismSuperpowers } from "../content";
+import { tidbits, tidbitsFaq, autismSuperpowers, favoriteSmells } from "../content";
 
 export default function TidbitsPage() {
   return (
@@ -25,6 +25,21 @@ export default function TidbitsPage() {
               {autismSuperpowers.map((power) => (
                 <div key={power} className="card p-4 font-medium">
                   ⭐ {power}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {favoriteSmells.length > 0 && (
+          <div className="mb-10">
+            <h3 className="heading-font text-2xl font-bold text-black drop-shadow mb-4 text-center">
+              My Favorite Smells
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {favoriteSmells.map((item) => (
+                <div key={item.smell} className="card p-4 font-medium">
+                  {item.emoji} {item.smell}
                 </div>
               ))}
             </div>
