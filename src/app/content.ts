@@ -658,6 +658,8 @@ For lunch we had turkey and cheese sandwiches with spicy mustard, obviously, bec
 
 I did some seashell hunting too, but sadly every single one I found was broken. Still looking for that perfect one.
 
+For dinner we went to Sack O' Subs and I got an Italian hoagie, giving it a solid 8.5/10. The dogs were begging the whole time through the see-through table, it was honestly very funny.
+
 More updates soon, sending yall love from the beach!
 ♥️Bella`,
   },
