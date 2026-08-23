@@ -23,6 +23,11 @@ const THEMES: { name: string; emoji: string; words: string[] }[] = [
     emoji: "💛",
     words: ["MOM", "DAD", "AUNTJILL", "UNCLEGARY", "POPPOP", "GRANDMA", "KINDNESS", "RAINBOW"],
   },
+  {
+    name: "Bella Describer",
+    emoji: "✨",
+    words: ["BIRDCALL", "PETLOVER", "INJURYPRONE", "HUNGRY", "LITERAL", "ARTSY", "FUNNY", "LOYAL"],
+  },
 ];
 
 const GRID_SIZE = 12;
