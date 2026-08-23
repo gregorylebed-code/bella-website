@@ -1,7 +1,7 @@
 import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
-import { bellaTranslator } from "../content";
+import { bellaTranslator, wordsSayTooMuch } from "../content";
 
 export default function BellaTranslatorPage() {
   return (
@@ -31,6 +31,27 @@ export default function BellaTranslatorPage() {
                 <p className="leading-relaxed mt-1">{entry.meaning}</p>
               </div>
             ))}
+          </div>
+        )}
+
+        {wordsSayTooMuch.length > 0 && (
+          <div className="mt-10">
+            <h3 className="heading-font text-2xl font-bold text-black drop-shadow mb-2 text-center">
+              Words I Say Too Much
+            </h3>
+            <p className="text-center text-foreground/70 font-medium mb-4">
+              Self-aware and proud of it. 😅
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {wordsSayTooMuch.map((word) => (
+                <span
+                  key={word}
+                  className="heading-font text-lg font-bold px-5 py-2 rounded-full bg-white/90 shadow-md text-purple-600"
+                >
+                  {word}
+                </span>
+              ))}
+            </div>
           </div>
         )}
       </section>

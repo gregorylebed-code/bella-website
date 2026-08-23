@@ -539,6 +539,17 @@ export const bellaTranslator: { word: string; meaning: string }[] = [
 ];
 
 // -----------------------------
+// WORDS I SAY TOO MUCH
+// Catchphrases and things Bella says constantly, self-aware and funny.
+// -----------------------------
+export const wordsSayTooMuch: string[] = [
+  "Sorry",
+  "You pick",
+  "I love you",
+  "My bird call noise",
+];
+
+// -----------------------------
 // PICTURES
 // Put image files in: public/photos/
 // Then reference them here as "/photos/filename.jpg"
