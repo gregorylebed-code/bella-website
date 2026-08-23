@@ -465,6 +465,24 @@ export const bellaScale: { item: string; rainbows: number; note: string }[] = [
 ];
 
 // -----------------------------
+// MY COOKING FAILS (AND WHAT I LEARNED)
+// Honest kitchen disasters, funny and real, plus what I took away
+// from each one. Add as many as you want.
+// -----------------------------
+export const cookingFails: { title: string; whatHappened: string; whatILearned: string }[] = [
+  {
+    title: "The Great Cookie Smush",
+    whatHappened: "We were baking cookies as a family and every single one smushed together into one giant mega cookie. To this day we genuinely do not know why.",
+    whatILearned: "Some kitchen mysteries just don't get solved, and that's okay.",
+  },
+  {
+    title: "The Air Fryer Incident",
+    whatHappened: "I got a second degree burn on my forearm from the air fryer. Somehow I stayed pretty calm through it, other than my oven mitt ending up in a boiling pot in the process.",
+    whatILearned: "No more air fryer for me, that's a hard pass now.",
+  },
+];
+
+// -----------------------------
 // THE BELLA TRANSLATOR
 // Words and phrases from Bella's own vocabulary, and what they
 // actually mean. Add as many as you want.
