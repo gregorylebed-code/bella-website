@@ -1,6 +1,6 @@
 import Clouds from "../Clouds";
 import NavBar from "../NavBar";
-import { aboutPhoto, aboutIntro, quickFacts } from "../content";
+import { aboutPhoto, aboutIntro, quickFacts, askMeAbout } from "../content";
 
 export default function AboutPage() {
   return (
@@ -35,6 +35,24 @@ export default function AboutPage() {
               {quickFacts.map((fact) => (
                 <div key={fact} className="card p-4 font-medium">
                   🌈 {fact}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {askMeAbout.length > 0 && (
+          <div className="mt-8">
+            <h3 className="heading-font text-2xl font-bold text-black drop-shadow mb-2 text-center">
+              Ask Me About...
+            </h3>
+            <p className="text-center text-foreground/70 font-medium mb-4">
+              Meeting me for the first time? Here's an easy way in!
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {askMeAbout.map((item) => (
+                <div key={item.topic} className="card p-4 font-medium">
+                  {item.emoji} {item.topic}
                 </div>
               ))}
             </div>

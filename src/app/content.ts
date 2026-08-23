@@ -585,6 +585,21 @@ export const drawingPrompts: string[] = [
 ];
 
 // -----------------------------
+// ASK ME ABOUT
+// Topics Bella loves talking about, an easy conversation starter
+// for people who want to get to know her. Add as many as you want.
+// -----------------------------
+export const askMeAbout: { emoji: string; topic: string }[] = [
+  { emoji: "🍽️", topic: "My sock collection" },
+  { emoji: "🐾", topic: "My pets, especially Rigatoni's zoomies" },
+  { emoji: "🎮", topic: "Pokemon silhouettes, I know them all" },
+  { emoji: "👨‍🍳", topic: "Cooking and my shifts at Wendy's" },
+  { emoji: "📺", topic: "The Office, I've seen every episode a hundred times" },
+  { emoji: "🌍", topic: "Places I've traveled, like my Atlanta trip" },
+  { emoji: "🗣️", topic: "German, and the other languages I want to learn" },
+];
+
+// -----------------------------
 // INGREDIENTS I CAN'T LIVE WITHOUT
 // Bella's go-to pantry staples and condiments. Emoji shows if no photo.
 // -----------------------------
