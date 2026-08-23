@@ -2,17 +2,27 @@
 
 import { useMemo, useState } from "react";
 
-const WORDS = [
-  "RIGATONI",
-  "SADIE",
-  "LAVENDER",
-  "RAINBOW",
-  "SOCKS",
-  "PIZZA",
-  "WENDYS",
-  "GERMAN",
-  "KINDNESS",
-  "OFFICE",
+const THEMES: { name: string; emoji: string; words: string[] }[] = [
+  {
+    name: "Pets",
+    emoji: "🐾",
+    words: ["RIGATONI", "SADIE", "LAVENDER", "ELLIE", "PENNY", "JANINE", "ZOOMIES", "PUPPY"],
+  },
+  {
+    name: "Hobbies",
+    emoji: "🎨",
+    words: ["DRAWING", "COOKING", "GAMING", "SOCKS", "YOUTUBE", "PUZZLE", "STORIES", "BISTRO"],
+  },
+  {
+    name: "Food",
+    emoji: "🍕",
+    words: ["PIZZA", "NUGGETS", "QUESO", "PICKLES", "MUSTARD", "GUACAMOLE", "TACOS", "MANOMANO"],
+  },
+  {
+    name: "Family",
+    emoji: "💛",
+    words: ["MOM", "DAD", "AUNTJILL", "UNCLEGARY", "POPPOP", "GRANDMA", "KINDNESS", "RAINBOW"],
+  },
 ];
 
 const GRID_SIZE = 12;
@@ -32,13 +42,13 @@ type PlacedWord = {
   cells: [number, number][];
 };
 
-function buildGrid(): { grid: string[][]; placed: PlacedWord[] } {
+function buildGrid(words: string[]): { grid: string[][]; placed: PlacedWord[] } {
   const grid: string[][] = Array.from({ length: GRID_SIZE }, () =>
     Array.from({ length: GRID_SIZE }, () => "")
   );
   const placed: PlacedWord[] = [];
 
-  for (const word of WORDS) {
+  for (const word of words) {
     let attempts = 0;
     let ok = false;
     while (attempts < 200 && !ok) {
@@ -89,11 +99,21 @@ function cellKey(r: number, c: number) {
 }
 
 export default function WordSearch() {
-  const { grid, placed } = useMemo(() => buildGrid(), []);
+  const [themeIndex, setThemeIndex] = useState(0);
+  const theme = THEMES[themeIndex];
+  const { grid, placed } = useMemo(() => buildGrid(theme.words), [theme]);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [foundWords, setFoundWords] = useState<Set<string>>(new Set());
   const [dragging, setDragging] = useState(false);
   const [startCell, setStartCell] = useState<[number, number] | null>(null);
+
+  function selectTheme(index: number) {
+    setThemeIndex(index);
+    setSelected(new Set());
+    setFoundWords(new Set());
+    setDragging(false);
+    setStartCell(null);
+  }
 
   function cellsBetween(a: [number, number], b: [number, number]): [number, number][] {
     const [r1, c1] = a;
@@ -155,6 +175,22 @@ export default function WordSearch() {
         Click and drag to find all the words!
       </p>
 
+      <div className="flex flex-wrap justify-center gap-2 mb-4">
+        {THEMES.map((t, i) => (
+          <button
+            key={t.name}
+            onClick={() => selectTheme(i)}
+            className={`text-sm font-bold px-4 py-1.5 rounded-full shadow-sm transition-colors ${
+              i === themeIndex
+                ? "bg-purple-500 text-white"
+                : "bg-white/80 hover:bg-white text-foreground"
+            }`}
+          >
+            {t.emoji} {t.name}
+          </button>
+        ))}
+      </div>
+
       {allFound && (
         <p className="text-center heading-font font-bold text-green-600 mb-3">
           You found them all! 🎉
@@ -195,7 +231,7 @@ export default function WordSearch() {
       </div>
 
       <div className="flex flex-wrap justify-center gap-2">
-        {WORDS.map((word) => (
+        {theme.words.map((word) => (
           <span
             key={word}
             className={`text-xs font-bold px-3 py-1 rounded-full ${
