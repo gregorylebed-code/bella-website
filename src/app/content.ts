@@ -627,6 +627,8 @@ export const blogPosts: { title: string; date: string; text: string }[] = [
 
 For lunch we had turkey and cheese sandwiches with spicy mustard, obviously, because you already know I can't live without that stuff.
 
+I did some seashell hunting too, but sadly every single one I found was broken. Still looking for that perfect one.
+
 More updates soon, sending yall love from the beach!
 ♥️Bella`,
   },
