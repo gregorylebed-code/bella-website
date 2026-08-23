@@ -3,6 +3,7 @@ import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
 import { pets, relativesPets } from "../content";
 import PetCard from "./PetCard";
+import MatchThePet from "./MatchThePet";
 
 export default function PetsPage() {
   return (
@@ -26,6 +27,8 @@ export default function PetsPage() {
             ))}
           </div>
         )}
+
+        {pets.length > 0 && <MatchThePet pets={pets} />}
 
         {relativesPets.length > 0 && (
           <div className="mt-10">
