@@ -2,6 +2,7 @@ import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
 import { showAndTell } from "../content";
+import WordSearch from "./WordSearch";
 
 export default function ShowAndTellPage() {
   return (
@@ -18,6 +19,8 @@ export default function ShowAndTellPage() {
         <p className="text-center text-foreground/70 font-medium mb-8">
           What I'm currently into! Check back, this changes all the time. ✨
         </p>
+
+        <WordSearch />
 
         {showAndTell.length === 0 ? (
           <EmptyState text="Nothing to show yet, check back soon!" />
