@@ -3,6 +3,7 @@ import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
 import { showAndTell } from "../content";
 import WordSearch from "./WordSearch";
+import Maze from "./Maze";
 
 export default function ShowAndTellPage() {
   return (
@@ -20,7 +21,11 @@ export default function ShowAndTellPage() {
           What I'm currently into! Check back, this changes all the time. ✨
         </p>
 
+        <h3 className="heading-font text-2xl font-bold text-black drop-shadow mb-4 text-center">
+          🎮 Games
+        </h3>
         <WordSearch />
+        <Maze />
 
         {showAndTell.length === 0 ? (
           <EmptyState text="Nothing to show yet, check back soon!" />
