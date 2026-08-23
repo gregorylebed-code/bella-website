@@ -621,6 +621,16 @@ export const ingredients: { name: string; emoji: string; note: string; photo: st
 // -----------------------------
 export const blogPosts: { title: string; date: string; text: string }[] = [
   {
+    title: "Ocean City, Day 2!",
+    date: "August 23, 2026",
+    text: `Hi peeps, day 2 in Ocean City! We hit the beach today, which honestly might be my favorite part of this whole trip.
+
+For lunch we had turkey and cheese sandwiches with spicy mustard, obviously, because you already know I can't live without that stuff.
+
+More updates soon, sending yall love from the beach!
+♥️Bella`,
+  },
+  {
     title: "Ocean City, Day 1!",
     date: "August 22, 2026",
     text: `Hi peeps! We made it to Ocean City! We got here around 3pm and our house is literally on the beach this year, and it's a very big home, so I'm already feeling fancy.
