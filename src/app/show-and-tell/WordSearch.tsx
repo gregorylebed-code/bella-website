@@ -26,7 +26,7 @@ const THEMES: { name: string; emoji: string; words: string[] }[] = [
   {
     name: "Bella Describer",
     emoji: "✨",
-    words: ["BIRDCALL", "PETLOVER", "INJURYPRONE", "HUNGRY", "LITERAL", "ARTSY", "FUNNY", "LOYAL"],
+    words: ["BIRDCALL", "PETLOVER", "INJURYPRONE", "HUNGRY", "LITERAL", "CHILDISH", "SILLY", "GOOFBALL", "HISTORYNERD"],
   },
 ];
 
