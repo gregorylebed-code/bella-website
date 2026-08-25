@@ -685,6 +685,8 @@ export const blogPosts: { title: string; date: string; text: string }[] = [
 
 We started with Pirate Island Mini Golf, and I got a +8, which honestly isn't too shabby for me.
 
+Also, fun fact, I somehow had breakfast three separate times today. Zero regrets.
+
 My dad's mom and dad and my sister came down for the day too, and we all went to Uncle Bill's Pancake House. I got french toast, 8/10.
 
 After that we walked around the boardwalk and I stumbled onto Frenchy's Handcut French Fries. So so good, giving those a 8.9/10.
