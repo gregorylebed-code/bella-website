@@ -679,6 +679,20 @@ export const ingredients: { name: string; emoji: string; note: string; photo: st
 // -----------------------------
 export const blogPosts: { title: string; date: string; text: string }[] = [
   {
+    title: "Ocean City, Day 3!",
+    date: "August 24, 2026",
+    text: `Hi peeps, day 3 in Ocean City and it was such a lovely day!
+
+We started with Pirate Island Mini Golf, and I got a +8, which honestly isn't too shabby for me.
+
+My dad's mom and dad and my sister came down for the day too, and we all went to Uncle Bill's Pancake House. I got french toast, 8/10.
+
+After that we walked around the boardwalk and I stumbled onto Frenchy's Handcut French Fries. So so good, giving those a 8.9/10.
+
+Such a lovely day all around. Sending yall love from Ocean City!
+♥️Bella`,
+  },
+  {
     title: "Ocean City, Day 2!",
     date: "August 23, 2026",
     text: `Hi peeps, day 2 in Ocean City! We hit the beach today, which honestly might be my favorite part of this whole trip.
