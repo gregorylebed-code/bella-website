@@ -679,6 +679,30 @@ export const ingredients: { name: string; emoji: string; note: string; photo: st
 // -----------------------------
 export const blogPosts: { title: string; date: string; text: string }[] = [
   {
+    title: "Ocean City, Day 5!",
+    date: "August 26, 2026",
+    text: `Hi peeps, day 5 in Ocean City! My cousins Savannah and Tolu came by today and it was so good to see them.
+
+We all went to Picini's for their wood fired pizza, which is a whole vibe. I got breadsticks, lemonade, and a loaded baked potato pizza, giving that one an 8.4/10. Never thought baked potato belonged on pizza but here we are, converted.
+
+Such a good day full of family and carbs. Sending yall love from Ocean City!
+♥️Bella`,
+  },
+  {
+    title: "Ocean City, Day 4!",
+    date: "August 25, 2026",
+    text: `Hi peeps, day 4 in Ocean City! Started the morning by making myself a bacon egg and cheese sandwich on toast, chef Bella is in the building.
+
+Then I gave my aunt's doggies so many belly rubs, that's basically a full time job at this point.
+
+For lunch we hit up Mr Gordo's Taco Taqueria and got loaded chicken nachos, giving those a 9.5/10, seriously so good.
+
+Dinner was at Kessel's Korner, I got a cheeseburger and it came with so many pickles, which is exactly my kind of burger.
+
+Another great one in the books. Sending yall love from the beach!
+♥️Bella`,
+  },
+  {
     title: "Ocean City, Day 3!",
     date: "August 24, 2026",
     text: `Hi peeps, day 3 in Ocean City and it was such a lovely day!
