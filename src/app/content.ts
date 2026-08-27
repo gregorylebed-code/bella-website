@@ -924,6 +924,39 @@ export const videos: { id: string; title: string }[] = [
 ];
 
 // -----------------------------
+// BELLA BINGO
+// 24 squares that fill a 5x5 card around a free space in the middle.
+// Things that might happen on a normal Bella day. Visitors mark off
+// squares that also happened to them and see if they get bingo.
+// -----------------------------
+export const bellaBingo: string[] = [
+  "Ate turkey and cheese with spicy mustard",
+  "Got kisses from a dog",
+  "Rated something out of 10",
+  "Drew something today",
+  "Had breakfast more than once",
+  "Said sorry not sorry",
+  "Walked on a boardwalk",
+  "Did a crossword or puzzle",
+  "Tried a new food",
+  "Gave someone a compliment",
+  "Watched a cooking video",
+  "Had pizza",
+  "Did something kind for someone",
+  "Went to the beach",
+  "Made a to-do list",
+  "Had a sensory-friendly moment",
+  "Talked about being a chef someday",
+  "Hung out with family",
+  "Found a broken seashell",
+  "Had a really good sandwich",
+  "Practiced a new recipe",
+  "Got overstimulated and took a break",
+  "Sent someone love and kindness",
+  "Played a game",
+];
+
+// -----------------------------
 // "NEW" BADGES
 // Whenever you add something to a section above (a drawing, a photo, a
 // recipe, a video, etc.), bump that section's date here to today's date
@@ -939,7 +972,7 @@ export const sectionUpdates: Record<string, string> = {
   "Build Bella's Plate": "2026-08-14",
   "Kindness Challenge": "2026-08-15",
   "Guess That Fact": "2026-08-15",
-  "Show and Tell": "2026-08-15",
+  "Show and Tell": "2026-08-26",
   "Bella's Awards": "2026-08-16",
   "Bella's Rulebook": "2026-08-16",
   "The Bella Scale": "2026-08-16",

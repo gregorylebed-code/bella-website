@@ -30,6 +30,12 @@ export const BADGES: Badge[] = [
     emoji: "🧠",
     description: "Matched every pet with their quote in Match the Pet.",
   },
+  {
+    id: "bella-bingo",
+    name: "Bingo!",
+    emoji: "🎉",
+    description: "Got a bingo on Bella Bingo.",
+  },
 ];
 
 const STORAGE_KEY = "bella-unlocked-badges";

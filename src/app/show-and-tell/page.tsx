@@ -1,9 +1,10 @@
 import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
-import { showAndTell } from "../content";
+import { showAndTell, bellaBingo } from "../content";
 import WordSearch from "./WordSearch";
 import Maze from "./Maze";
+import BingoCard from "../bella-bingo/BingoCard";
 
 export default function ShowAndTellPage() {
   return (
@@ -26,6 +27,14 @@ export default function ShowAndTellPage() {
         </h3>
         <WordSearch />
         <Maze />
+        {bellaBingo.length >= 24 && (
+          <div className="mb-8">
+            <p className="text-center text-foreground/70 font-medium mb-4">
+              Bella Bingo! Mark off squares that happened to you too. 🎉
+            </p>
+            <BingoCard squares={bellaBingo} />
+          </div>
+        )}
 
         {showAndTell.length === 0 ? (
           <EmptyState text="Nothing to show yet, check back soon!" />
