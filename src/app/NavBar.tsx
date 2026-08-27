@@ -8,6 +8,7 @@ const links: [string, string][] = [
   ["Pets", "/pets"],
   ["Bucket List", "/bucket-list"],
   ["Blog", "/blog"],
+  ["Bella's Trips", "/bellas-trips"],
   ["Ausome Autism", "/tidbits"],
   ["Videos", "/videos"],
   ["Affirmations", "/affirmations"],

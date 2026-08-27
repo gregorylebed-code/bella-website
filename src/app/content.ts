@@ -676,11 +676,14 @@ export const ingredients: { name: string; emoji: string; note: string; photo: st
 // Write about anything: your day, something you're excited about,
 // whatever you want. Newest posts should go at the TOP of the list.
 // Date format: "Month Day, Year" (e.g. "July 18, 2026")
+// The optional "trip" field groups posts together on the Bella's Trips
+// page. Use the same trip name across all posts from that trip.
 // -----------------------------
-export const blogPosts: { title: string; date: string; text: string }[] = [
+export const blogPosts: { title: string; date: string; text: string; trip?: string }[] = [
   {
     title: "Ocean City, Day 5!",
     date: "August 26, 2026",
+    trip: "Ocean City 2026",
     text: `Hi peeps, day 5 in Ocean City! My cousins Savannah and Tolu came by today and it was so good to see them.
 
 We all went to Picini's for their wood fired pizza, which is a whole vibe. I got breadsticks, lemonade, and a loaded baked potato pizza, giving that one an 8.4/10. Never thought baked potato belonged on pizza but here we are, converted.
@@ -691,6 +694,7 @@ Such a good day full of family and carbs. Sending yall love from Ocean City!
   {
     title: "Ocean City, Day 4!",
     date: "August 25, 2026",
+    trip: "Ocean City 2026",
     text: `Hi peeps, day 4 in Ocean City! Started the morning by making myself a bacon egg and cheese sandwich on toast, chef Bella is in the building.
 
 Then I gave my aunt's doggies so many belly rubs, that's basically a full time job at this point.
@@ -705,6 +709,7 @@ Another great one in the books. Sending yall love from the beach!
   {
     title: "Ocean City, Day 3!",
     date: "August 24, 2026",
+    trip: "Ocean City 2026",
     text: `Hi peeps, day 3 in Ocean City and it was such a lovely day!
 
 We started with Pirate Island Mini Golf, and I got a +8, which honestly isn't too shabby for me.
@@ -721,6 +726,7 @@ Such a lovely day all around. Sending yall love from Ocean City!
   {
     title: "Ocean City, Day 2!",
     date: "August 23, 2026",
+    trip: "Ocean City 2026",
     text: `Hi peeps, day 2 in Ocean City! We hit the beach today, which honestly might be my favorite part of this whole trip.
 
 For lunch we had turkey and cheese sandwiches with spicy mustard, obviously, because you already know I can't live without that stuff.
@@ -737,6 +743,7 @@ More updates soon, sending yall love from the beach!
   {
     title: "Ocean City, Day 1!",
     date: "August 22, 2026",
+    trip: "Ocean City 2026",
     text: `Hi peeps! We made it to Ocean City! We got here around 3pm and our house is literally on the beach this year, and it's a very big home, so I'm already feeling fancy.
 
 First stop obviously was food. We got Manco & Manco Pizza and honestly it did not disappoint, that thin crispy crust is elite. 10/10 start to the trip if you ask me.
@@ -925,6 +932,7 @@ export const videos: { id: string; title: string }[] = [
 // from the newest post's date, no need to touch it here.
 // -----------------------------
 export const sectionUpdates: Record<string, string> = {
+  "Bella's Trips": "2026-08-26",
   Pictures: "2026-07-11",
   Drawings: "2026-08-14",
   "Ausome Autism": "2026-08-14",
