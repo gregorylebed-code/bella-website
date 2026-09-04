@@ -681,6 +681,20 @@ export const ingredients: { name: string; emoji: string; note: string; photo: st
 // -----------------------------
 export const blogPosts: { title: string; date: string; text: string; trip?: string }[] = [
   {
+    title: "First Week of Junior Year!",
+    date: "September 4, 2026",
+    text: `Hi peeps! Wow, I can't believe I'm a junior in high school now. It was a long week, crowded hallways and all, plus I had work at Wendy's on Tuesday, so I am really tired.
+
+All my teachers are nice this year, and lunch has been nice too, I've got a friend of mine to sit with. I'm in German 5 this year, which is pretty cool.
+
+Honestly, I did not miss the crowded halls one bit lol.
+
+A few extra bits since yall asked! PSAT is happening this year, so that's officially on my radar now. I'm also taking Algebra 2, and somehow I'm doing fairly well in that class, not gonna lie I'm a little shocked myself. Chemistry though, that class is insane, and I'm sitting next to the bad kids, ugh.
+
+Sending yall love and kindness from junior year!
+♥️Bella`,
+  },
+  {
     title: "Ocean City, Day 5!",
     date: "August 26, 2026",
     trip: "Ocean City 2026",
