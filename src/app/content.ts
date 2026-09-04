@@ -1051,7 +1051,7 @@ export const bellaBingo: string[] = [
 export const sectionUpdates: Record<string, string> = {
   "Bella's Trips": "2026-09-04",
   Pictures: "2026-07-11",
-  Drawings: "2026-08-14",
+  Drawings: "2026-09-04",
   "Ausome Autism": "2026-08-14",
   "Build Bella's Plate": "2026-08-14",
   "Kindness Challenge": "2026-08-15",

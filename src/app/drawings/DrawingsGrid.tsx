@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import EmptyState from "../EmptyState";
 import ColoringPageModal from "./ColoringPageModal";
 import ColoringBookButton from "./ColoringBookButton";
+import BookmarkModal from "./BookmarkModal";
 
 const FAVORITES_KEY = "bella-favorite-drawings";
 
@@ -16,6 +17,7 @@ export default function DrawingsGrid({
   const [favorites, setFavorites] = useState<string[]>([]);
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const [coloringPick, setColoringPick] = useState<{ src: string; caption: string } | null>(null);
+  const [bookmarkPick, setBookmarkPick] = useState<{ src: string; caption: string } | null>(null);
 
   useEffect(() => {
     const stored = localStorage.getItem(FAVORITES_KEY);
@@ -80,12 +82,20 @@ export default function DrawingsGrid({
                   {isFavorite ? "❤️" : "🤍"}
                 </button>
                 <img src={d.src} alt={d.caption} className="w-full aspect-square object-cover" />
-                <button
-                  onClick={() => setColoringPick(d)}
-                  className="heading-font w-full py-1.5 text-xs font-bold bg-white/90 hover:bg-white border-t"
-                >
-                  🖍️ Coloring Page
-                </button>
+                <div className="flex border-t">
+                  <button
+                    onClick={() => setColoringPick(d)}
+                    className="heading-font flex-1 py-1.5 text-xs font-bold bg-white/90 hover:bg-white"
+                  >
+                    🖍️ Coloring Page
+                  </button>
+                  <button
+                    onClick={() => setBookmarkPick(d)}
+                    className="heading-font flex-1 py-1.5 text-xs font-bold bg-white/90 hover:bg-white border-l"
+                  >
+                    🔖 Bookmark
+                  </button>
+                </div>
                 <figcaption className="p-2 text-sm text-center font-medium">{d.caption}</figcaption>
               </figure>
             );
@@ -95,6 +105,9 @@ export default function DrawingsGrid({
 
       {coloringPick && (
         <ColoringPageModal drawing={coloringPick} onClose={() => setColoringPick(null)} />
+      )}
+      {bookmarkPick && (
+        <BookmarkModal drawing={bookmarkPick} onClose={() => setBookmarkPick(null)} />
       )}
     </>
   );
