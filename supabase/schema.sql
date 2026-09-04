@@ -26,6 +26,12 @@ create policy "public can insert messages"
   on messages for insert
   with check (true);
 
+-- Admin page needs to delete messages. The app itself gates this
+-- behind the admin password cookie (see src/app/admin/actions.ts).
+create policy "public can delete messages"
+  on messages for delete
+  using (true);
+
 -- Anyone can submit their email (no read access for the public)
 create policy "public can insert email signups"
   on email_signups for insert

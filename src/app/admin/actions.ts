@@ -23,7 +23,14 @@ export async function logout() {
   cookieStore.delete("bella-admin");
 }
 
+async function isAdmin() {
+  const cookieStore = await cookies();
+  return cookieStore.get("bella-admin")?.value === process.env.ADMIN_PASSWORD;
+}
+
 export async function deleteMessage(formData: FormData) {
+  if (!(await isAdmin())) return;
+
   const id = String(formData.get("id") ?? "");
 
   if (!id) return;
@@ -40,6 +47,8 @@ export async function deleteMessage(formData: FormData) {
 }
 
 export async function answerQuestion(formData: FormData) {
+  if (!(await isAdmin())) return;
+
   const id = String(formData.get("id") ?? "");
   const answer = String(formData.get("answer") ?? "").trim();
 
