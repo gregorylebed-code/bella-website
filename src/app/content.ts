@@ -1056,7 +1056,7 @@ export const sectionUpdates: Record<string, string> = {
   "Build Bella's Plate": "2026-08-14",
   "Kindness Challenge": "2026-08-15",
   "Guess That Fact": "2026-08-15",
-  "Show and Tell": "2026-08-26",
+  "Show and Tell": "2026-09-04",
   "Bella's Awards": "2026-08-16",
   "Bella's Rulebook": "2026-08-16",
   "The Bella Scale": "2026-08-16",

@@ -36,6 +36,12 @@ export const BADGES: Badge[] = [
     emoji: "🎉",
     description: "Got a bingo on Bella Bingo.",
   },
+  {
+    id: "mad-libs",
+    name: "Mad Libs Master",
+    emoji: "📝",
+    description: "Created a story with Bella Mad Libs.",
+  },
 ];
 
 const STORAGE_KEY = "bella-unlocked-badges";

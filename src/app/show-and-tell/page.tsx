@@ -4,6 +4,7 @@ import EmptyState from "../EmptyState";
 import { showAndTell, bellaBingo } from "../content";
 import WordSearch from "./WordSearch";
 import Maze from "./Maze";
+import MadLibs from "./MadLibs";
 import BingoCard from "../bella-bingo/BingoCard";
 
 export default function ShowAndTellPage() {
@@ -27,6 +28,7 @@ export default function ShowAndTellPage() {
         </h3>
         <WordSearch />
         <Maze />
+        <MadLibs />
         {bellaBingo.length >= 24 && (
           <div className="mb-8">
             <p className="text-center text-foreground/70 font-medium mb-4">
