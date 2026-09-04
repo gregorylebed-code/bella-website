@@ -786,6 +786,7 @@ As always, love and kindness sent your way!!
   {
     title: "My Atlanta Trip Recap!",
     date: "August 1, 2026",
+    trip: "Atlanta 2026",
     text: `Wow! What an awesome trip to Atlanta. I'm kinda in a whirlwind of emotions, like happy to be in NJ, sad missing all the Georgia peaches, and excited as I just had my first day of work ever.
 
 The plane ride there was awesome, this guy was so nice to help me carry my bags. Lucky for me I had a window seat, and I am a fun-sized Twix bar so I could squeeze anywhere. Although, I couldn't stand my ears constantly popping.
@@ -813,6 +814,7 @@ There were definitely some overwhelming moments, since I was traveling with peop
   {
     title: "Atlanta, Here I Come!",
     date: "July 26, 2026",
+    trip: "Atlanta 2026",
     text: `Hi peeps! On Friday I'm having an early morning flight to Atlanta from Philadelphia. I have to get up at 3:30 am 😬. Keep in mind I'm not a morning person so we shall see how that goes. This is my second time on an airplane.
 
 Our plans consist of aquarium, Stone Mountain, World of Coca Cola and possibly a bbq dinner like a true southern bbq. I'll take lots of pics to show yall my trip favs and highlights. I can't wait to try Atlanta restaurants for the first time!! I'll try to make a photo dump of my adventures, restaurants and sights to see!
@@ -844,6 +846,18 @@ Some of my skills include: cooking, writing stories, food blogging, some might c
 
 I also have a massive fun sock collection! So many cool designs, foods, animals. I can do voice impressions of Marge, Stewie, Homer, Stitch. And make useless bird call noises.`,
   },
+];
+
+// -----------------------------
+// TRAVEL MAP
+// Pins shown on Bella's Trips map. `trip` must exactly match a `trip`
+// value used in blogPosts above so the pin can jump to that trip's
+// posts. x/y are percent positions on the stylized map (0-100), not
+// real coordinates, just eyeballed to roughly the right spot.
+// -----------------------------
+export const tripLocations: { trip: string; place: string; emoji: string; x: number; y: number }[] = [
+  { trip: "Ocean City 2026", place: "Ocean City, NJ", emoji: "🏖️", x: 84, y: 22 },
+  { trip: "Atlanta 2026", place: "Atlanta, GA", emoji: "✈️", x: 66, y: 38 },
 ];
 
 // -----------------------------
@@ -979,7 +993,7 @@ export const bellaBingo: string[] = [
 // from the newest post's date, no need to touch it here.
 // -----------------------------
 export const sectionUpdates: Record<string, string> = {
-  "Bella's Trips": "2026-08-26",
+  "Bella's Trips": "2026-09-04",
   Pictures: "2026-07-11",
   Drawings: "2026-08-14",
   "Ausome Autism": "2026-08-14",

@@ -2,7 +2,9 @@ import Clouds from "../Clouds";
 import NavBar from "../NavBar";
 import EmptyState from "../EmptyState";
 import PostReactions from "../PostReactions";
+import TripsMap from "./TripsMap";
 import { blogPosts } from "../content";
+import { tripSlug } from "../tripSlug";
 
 export default function BellasTripsPage() {
   const trips = new Map<string, typeof blogPosts>();
@@ -31,25 +33,28 @@ export default function BellasTripsPage() {
         {tripNames.length === 0 ? (
           <EmptyState text="No trips yet, check back soon!" />
         ) : (
-          <div className="flex flex-col gap-10">
-            {tripNames.map((tripName) => (
-              <div key={tripName}>
-                <h3 className="heading-font text-2xl font-bold mb-4 text-center">
-                  {tripName}
-                </h3>
-                <div className="flex flex-col gap-6">
-                  {trips.get(tripName)!.map((post) => (
-                    <article key={post.title} className="card p-6">
-                      <h4 className="heading-font text-xl font-bold mb-1">{post.title}</h4>
-                      <p className="text-sm text-foreground/60 font-medium mb-3">{post.date}</p>
-                      <p className="whitespace-pre-line leading-relaxed">{post.text}</p>
-                      <PostReactions postId={post.title} />
-                    </article>
-                  ))}
+          <>
+            <TripsMap />
+            <div className="flex flex-col gap-10">
+              {tripNames.map((tripName) => (
+                <div key={tripName} id={tripSlug(tripName)}>
+                  <h3 className="heading-font text-2xl font-bold mb-4 text-center">
+                    {tripName}
+                  </h3>
+                  <div className="flex flex-col gap-6">
+                    {trips.get(tripName)!.map((post) => (
+                      <article key={post.title} className="card p-6">
+                        <h4 className="heading-font text-xl font-bold mb-1">{post.title}</h4>
+                        <p className="text-sm text-foreground/60 font-medium mb-3">{post.date}</p>
+                        <p className="whitespace-pre-line leading-relaxed">{post.text}</p>
+                        <PostReactions postId={post.title} />
+                      </article>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </>
         )}
       </section>
 
