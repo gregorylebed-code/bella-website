@@ -689,7 +689,7 @@ All my teachers are nice this year, and lunch has been nice too, I've got a frie
 
 Honestly, I did not miss the crowded halls one bit lol.
 
-A few extra bits since yall asked! PSAT is happening this year, so that's officially on my radar now. I'm also taking Algebra 2, and somehow I'm doing fairly well in that class, not gonna lie I'm a little shocked myself. Chemistry though, that class is insane, and I'm sitting next to the bad kids, ugh.
+A few extra bits since yall asked! PSAT is happening this year, so that's officially on my radar now. I'm also taking Algebra 2, and somehow I'm doing fairly well in that class, not gonna lie I'm a little shocked myself. Chemistry though, that class is insane, and I'm sitting next to the loud kids, ugh.
 
 Sending yall love and kindness from junior year!
 ♥️Bella`,
