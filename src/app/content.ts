@@ -952,6 +952,62 @@ export const videos: { id: string; title: string }[] = [
 ];
 
 // -----------------------------
+// BELLA'S BISTRO MENU
+// Dishes Bella's cooked, styled like a real restaurant menu on the
+// /bellas-bistro page. Group items with the same "category" together
+// (e.g. "Breakfast", "Mains", "Desserts"), categories show in the order
+// they first appear here. videoId is optional, links to the matching
+// Bella's Bistro video from the URL (see YOUTUBE VIDEOS note above).
+// -----------------------------
+export const bistroMenu: {
+  category: string;
+  name: string;
+  blurb: string;
+  videoId?: string;
+}[] = [
+  {
+    category: "Signature Sauce",
+    name: "Bellafallo Sauce",
+    blurb: "My own creation: ranch and hot sauce mixed together. Goes on literally everything.",
+  },
+  {
+    category: "Grilled Cheese",
+    name: "Mozzarella and Tomato Grilled Cheese",
+    blurb: "Gooey mozzarella and fresh tomato between crispy golden bread. A classic combo.",
+  },
+  {
+    category: "Grilled Cheese",
+    name: "Buffalo Chicken Grilled Cheese",
+    blurb: "Spicy buffalo chicken and melty cheese, grilled cheese leveled all the way up.",
+  },
+  {
+    category: "Mains",
+    name: "Cheeseburger Mac",
+    blurb: "Cheeseburger flavor meets mac and cheese. The ultimate mashup.",
+  },
+  {
+    category: "Mains",
+    name: "Chicken Parm",
+    blurb: "Crispy breaded chicken, marinara, and melted cheese, a classic done right.",
+  },
+  {
+    category: "Mains",
+    name: "Teriyaki Chicken",
+    blurb: "Sweet teriyaki chicken with a homemade pineapple sauce, served with fried rice.",
+  },
+  {
+    category: "Desserts",
+    name: "Peanut Butter Cookies",
+    blurb: "Soft, chewy, and packed with peanut butter flavor.",
+  },
+  {
+    category: "Desserts",
+    name: "Chocolate Chip Cookies",
+    blurb: "The classic, done the Bella way.",
+  },
+];
+
+// -----------------------------
 // BELLA BINGO
 // 24 squares that fill a 5x5 card around a free space in the middle.
 // Things that might happen on a normal Bella day. Visitors mark off
@@ -1012,4 +1068,5 @@ export const sectionUpdates: Record<string, string> = {
   Pets: "2026-08-14",
   "Bucket List": "2026-08-14",
   Ingredients: "2026-08-22",
+  "Bella's Bistro Menu": "2026-09-04",
 };

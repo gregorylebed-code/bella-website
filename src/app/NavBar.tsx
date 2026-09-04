@@ -11,6 +11,7 @@ const links: [string, string][] = [
   ["Bella's Trips", "/bellas-trips"],
   ["Ausome Autism", "/tidbits"],
   ["Videos", "/videos"],
+  ["Bella's Bistro Menu", "/bellas-bistro"],
   ["Affirmations", "/affirmations"],
   ["Build Bella's Plate", "/plate-builder"],
   ["Kindness Challenge", "/kindness-challenge"],
